@@ -1,0 +1,15 @@
+<% if (theme.waline && theme.waline.enable) { %>
+<div id="waline"></div>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css"/>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+  
+  init({
+    el: '#waline',
+    serverURL: 'https://blog-comments-brown-ten.vercel.app',
+    lang: 'zh-CN',
+    pageSize: 10,
+    placeholder: '留下你的评论吧~'
+  });
+</script>
+<% } %>
