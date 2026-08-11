@@ -1,5 +1,5 @@
 ---
-title: myfirstblog
+title: my first blog
 date: 2026-01-29 
 hideComment: true
 img: /images/特蕾西娅皮肤.jpg
