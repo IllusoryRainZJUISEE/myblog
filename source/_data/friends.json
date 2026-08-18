@@ -7,7 +7,7 @@
 }, {
     "avatar": "/images/Carro&Bot.jpg",
     "name": "Carro&Bot",
-    "introduction": "摄影界大佬，技术牛，人还特别好，不懂的都可以请教大佬",
+    "introduction": "摄影界大佬，技术牛",
     "url": "https://mp.weixin.qq.com/s/0ouamcrEqu8z3DJxPhN97g",
     "title": "前去膜拜"
 }, {
@@ -15,5 +15,23 @@
     "name": "Circle:IV",
     "introduction": "我的博客的歌单",
     "url": "https://y.qq.com/n/ryqq/playlist/8840148049",
+    "title": "点击前往"
+}, {
+    "avatar": "/images/liaoyiyi.png",
+    "name": "Yiyi Liao",
+    "introduction": "意向导师，cv与ai方向",
+    "url": "https://yiyiliao.github.io/",
+    "title": "点击前往"
+}, {
+    "avatar": "/images/闪烁之狐.jpg",
+    "name": "闪烁之狐",
+    "introduction": "博客主题原址",
+    "url": "https://blinkfox.com/about/",
+    "title": "点击前往"
+}, {
+    "avatar": "/images/佩丽卡.jpg",
+    "name": "Savia",
+    "introduction": "工图，大物，概统的神",
+    "url": "https://savia7582.github.io/Exterior/",
     "title": "点击前往"
 }]
