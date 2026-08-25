@@ -6,7 +6,7 @@
   <link href="https://illusoryrainzjuisee.github.io/myblog/atom.xml" rel="self"/>
   
   <link href="https://illusoryrainzjuisee.github.io/myblog/"/>
-  <updated>2026-08-18T11:48:09.006Z</updated>
+  <updated>2026-08-25T09:02:24.158Z</updated>
   <id>https://illusoryrainzjuisee.github.io/myblog/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>大雾甲I课件</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/24/latex-ji-ben-yu-fa/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/24/latex-ji-ben-yu-fa/</id>
+    <published>2026-08-23T16:00:00.000Z</published>
+    <updated>2026-08-25T09:02:24.158Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;为了下学期的大物实验，不得不开始学latex了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&#92;documentclass[UTF8]{ctexart}&lt;br&gt;UTF8是编码格式，ctexart是文档类型，ctexart是支持中英文混排。&lt;br&gt;&#92;u</summary>
+        
+      
+    
+    
+    
+    <category term="Others" scheme="https://illusoryrainzjuisee.github.io/myblog/categories/Others/"/>
+    
+    
+    <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
+    
+    <category term="实验" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%AE%9E%E9%AA%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>信电导报告</title>
