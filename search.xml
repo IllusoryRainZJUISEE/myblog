@@ -8,7 +8,7 @@
       <link href="/myblog/2026/08/24/latex-ji-ben-yu-fa/"/>
       <url>/myblog/2026/08/24/latex-ji-ben-yu-fa/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>为了下学期的大物实验，不得不开始学latex了。</p></blockquote><p>\documentclass[UTF8]{ctexart}<br>UTF8是编码格式，ctexart是文档类型，ctexart是支持中英文混排。<br>\usepackage{graphicx}<br>这是引入一个宏包的语法，这是插入图片的宏包。在正文中需要引入图片时使用\includegraphics[width=0.5\textwidth]{图片的名称，可以省略扩展名}命令。<br>如果要设置图片标题等,需要嵌套结构。<br>\begin{figure}<br>\centering 居中显示<br>\includegraphics[width=0.5\textwidth]{图片的名称，可以省略扩展名}<br>\caption{图片标题}<br>\end{figure}<br>位于begin前的都是前言preamble，里面可以设置文档的标题、作者、日期、页眉页脚、字体大小、行间距等。<br>比如<br>\title{设置文章的标题}<br>\author{设置作者}<br>\date{\today}<br>这是自动生成今天的日期，需要配合\maketitle使用，\maketitle会在正文中生成标题、作者、日期。<br>\begin{document}<br>\maketitle<br>以begin{document}开头，\end{document}结尾，中间的内容就是正文内容。<br>\textbf{加粗文字}<br>\textit{设置斜体}<br>\underline{设置下滑线}<br>注意如果我们要生成一个新的段落，那么需要两下换行符，一个换行符只会生成空格而不会形成新的段落。<br>接下来是如何开启新的章节，使用\section等命令。<br>\section{这是第一个章节}<br>我们可以写第一个章节。<br>\subsection{开启一个子章节}<br>\subsubsection{开启一个子子章节}<br>\section{这是第二个章节}<br>我们可以写第二个章节。<br>注意编辑书籍时可以使用chapter和part等更大的部分命令。<br>大小为part&gt;chapter&gt;section&gt;subsection&gt;subsubsection……<br>接下来介绍latex的环境，位于\begin和\end之间的内容就是环境，它们的文字格式相同。<br>创建一个无序列表。<br>\begin{itemize}<br>\item 第一项<br>\item 第二项<br>\item 第三项<br>\end{itemize}<br>创建一个有序列表。<br>\begin{enumerate}<br>\item 第一项<br>\item 第二项<br>\item 第三项<br>\end{enumerate}<br>接下来是latex的最大优势，数学公式的排版。<br>latex允许直接添加行内公式，需要这样写，$E=mc^2$<br>如果公式需要单独成行。<br>\begin{equation}<br>E=mc^2<br>\end{equation}<br>也可以简写成这样。<br>[<br>E=mc^2<br>]<br>建议复杂的公式使用在线公式编译器<a href="https://latex.codecogs.com/eqneditor/editor.php">https://latex.codecogs.com/eqneditor/editor.php</a><br>接下来是表格的用法。<br>\begin{tabular}{|c|c|c|}三个c表示三列，c表示居中，l表示左对齐，r表示右对齐。|是竖直方向的边框。<br>\hline表示横向的边框。输入两次就变成双横线。<br>单元格1&amp;单元格2&amp;单元格3\<br>单元格4&amp;单元格5&amp;单元格6\<br>单元格7&amp;单元格8&amp;单元格9\分隔是这样写的。<br>\end{tabular}<br>与图片类似，如果需要添加标题等。<br>\begin{table}<br>\centering表示居中<br>\begin{tabular}{|c|c|c|}<br>\hline<br>单元格1&amp;单元格2&amp;单元格3\<br>\hline<br>单元格4&amp;单元格5&amp;单元格6\<br>\hline<br>单元格7&amp;单元格8&amp;单元格9\<br>\hline<br>\end{tabular}<br>\caption{添加标题}<br>\end{table}<br>\end{abstract}<br>\end{document}</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>为了下学期的大物实验，不得不开始学latex了。</p></blockquote><p>\documentclass[UTF8]{ctexart}<br>UTF8是编码格式，ctexart是文档类型，ctexart是支持中英文混排。<br>\usepackage{graphicx}<br>这是引入一个宏包的语法，这是插入图片的宏包。在正文中需要引入图片时使用\includegraphics[width=0.5\textwidth]{图片的名称，可以省略扩展名}命令。<br>如果要设置图片标题等,需要嵌套结构。<br>\begin{figure}<br>\centering 居中显示<br>\includegraphics[width=0.5\textwidth]{图片的名称，可以省略扩展名}<br>\caption{图片标题}<br>\end{figure}<br>位于begin前的都是前言preamble，里面可以设置文档的标题、作者、日期、页眉页脚、字体大小、行间距等。<br>比如<br>\title{设置文章的标题}<br>\author{设置作者}<br>\date{\today}<br>这是自动生成今天的日期，需要配合\maketitle使用，\maketitle会在正文中生成标题、作者、日期。<br>\begin{document}<br>\maketitle<br>以begin{document}开头，\end{document}结尾，中间的内容就是正文内容。<br>\textbf{加粗文字}<br>\textit{设置斜体}<br>\underline{设置下滑线}<br>注意如果我们要生成一个新的段落，那么需要两下换行符，一个换行符只会生成空格而不会形成新的段落。<br>接下来是如何开启新的章节，使用\section等命令。<br>\section{这是第一个章节}<br>我们可以写第一个章节。<br>\subsection{开启一个子章节}<br>\subsubsection{开启一个子子章节}<br>\section{这是第二个章节}<br>我们可以写第二个章节。<br>注意编辑书籍时可以使用chapter和part等更大的部分命令。<br>大小为part&gt;chapter&gt;section&gt;subsection&gt;subsubsection……<br>接下来介绍latex的环境，位于\begin和\end之间的内容就是环境，它们的文字格式相同。<br>创建一个无序列表。<br>\begin{itemize}<br>\item 第一项<br>\item 第二项<br>\item 第三项<br>\end{itemize}<br>创建一个有序列表。<br>\begin{enumerate}<br>\item 第一项<br>\item 第二项<br>\item 第三项<br>\end{enumerate}<br>接下来是latex的最大优势，数学公式的排版。<br>latex允许直接添加行内公式，需要这样写，$E=mc^2$<br>如果公式需要单独成行。<br>\begin{equation}<br>E=mc^2<br>\end{equation}<br>也可以简写成这样。<br>\[<br>E=mc^2<br>\]<br>建议复杂的公式使用在线公式编译器<a href="https://latex.codecogs.com/eqneditor/editor.php">https://latex.codecogs.com/eqneditor/editor.php</a><br>接下来是表格的用法。<br>\begin{tabular}{|c|c|c|}三个c表示三列，c表示居中，l表示左对齐，r表示右对齐。|是竖直方向的边框。<br>\hline表示横向的边框。输入两次就变成双横线。<br>单元格1&amp;单元格2&amp;单元格3\\<br>单元格4&amp;单元格5&amp;单元格6\\<br>单元格7&amp;单元格8&amp;单元格9\\分隔是这样写的。<br>\end{tabular}<br>与图片类似，如果需要添加标题等。<br>\begin{table}<br>\centering表示居中<br>\begin{tabular}{|c|c|c|}<br>\hline<br>单元格1&amp;单元格2&amp;单元格3\\<br>\hline<br>单元格4&amp;单元格5&amp;单元格6\\<br>\hline<br>单元格7&amp;单元格8&amp;单元格9\\<br>\hline<br>\end{tabular}<br>\caption{添加标题}<br>\end{table}<br>\end{abstract}<br>\end{document}</p>]]></content>
       
       
       <categories>
@@ -58,6 +58,33 @@
     
     
     <entry>
+      <title>大一信电短学期</title>
+      <link href="/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/"/>
+      <url>/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>短学期依旧是C语言强化+红色寻访实践+企业走访调研，<del>不过这C也太氵了</del>。今年红色实践不是都去井冈山，有三条路可以选择，虽然我还是去了井冈山，练就了坐车玩手机完全不晕的能力，活动还是挺有意思的。企业走访因为台风只去了一家，改为线上调研了。</p></blockquote><p>下面是氵的报告。</p><h3 id="红色寻访实践"><a href="#红色寻访实践" class="headerlink" title="红色寻访实践"></a>红色寻访实践</h3><div class="row">    <embed src="/myblog/pdfs/红色寻访实践.pdf" width="100%" height="550" type="application/pdf"></div><h3 id="企业走访调研"><a href="#企业走访调研" class="headerlink" title="企业走访调研"></a>企业走访调研</h3><div class="row">    <embed src="/myblog/pdfs/企业走访调研.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> Material </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 全部 </tag>
+            
+            <tag> 课程资料 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>匹克球考试资料</title>
       <link href="/myblog/2026/08/17/pi-ke-qiu-kao-shi-zi-liao/"/>
       <url>/myblog/2026/08/17/pi-ke-qiu-kao-shi-zi-liao/</url>
@@ -90,33 +117,6 @@
       <url>/myblog/2026/08/17/da-wu-jia-i-ke-jian/</url>
       
         <content type="html"><![CDATA[<blockquote><p>任课老师：lijie，杰哥伟大，我不会忘记发的100元红包的。自认为杰哥的课件质量不错，上传供参考。</p></blockquote><h3 id="质点运动学"><a href="#质点运动学" class="headerlink" title="质点运动学"></a>质点运动学</h3><div class="row">    <embed src="/myblog/pdfs/质点运动学-Full.pdf" width="100%" height="550" type="application/pdf"></div><h3 id="质点动力学"><a href="#质点动力学" class="headerlink" title="质点动力学"></a>质点动力学</h3><div class="row">    <embed src="/myblog/pdfs/质点动力学-Full.pdf" width="100%" height="550" type="application/pdf"></div><h3 id="刚体流体力学"><a href="#刚体流体力学" class="headerlink" title="刚体流体力学"></a>刚体流体力学</h3><div class="row">    <embed src="/myblog/pdfs/刚体流体力学-full.pdf" width="100%" height="550" type="application/pdf"></div><h3 id="狭义相对论"><a href="#狭义相对论" class="headerlink" title="狭义相对论"></a>狭义相对论</h3><div class="row">    <embed src="/myblog/pdfs/狭义相对论-full.pdf" width="100%" height="550" type="application/pdf"></div><h3 id="机械波"><a href="#机械波" class="headerlink" title="机械波"></a>机械波</h3><div class="row">    <embed src="/myblog/pdfs/机械波-full.pdf" width="100%" height="550" type="application/pdf"></div><h3 id="机械振动"><a href="#机械振动" class="headerlink" title="机械振动"></a>机械振动</h3><div class="row">    <embed src="/myblog/pdfs/机械振动-full.pdf" width="100%" height="550" type="application/pdf"></div><h3 id="气体动理论"><a href="#气体动理论" class="headerlink" title="气体动理论"></a>气体动理论</h3><div class="row">    <embed src="/myblog/pdfs/气体动理论-full.pdf" width="100%" height="550" type="application/pdf"></div><h3 id="热力学基础"><a href="#热力学基础" class="headerlink" title="热力学基础"></a>热力学基础</h3><div class="row">    <embed src="/myblog/pdfs/热力学基础-full.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
-      
-      
-      <categories>
-          
-          <category> Material </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 全部 </tag>
-            
-            <tag> 课程资料 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>大一信电短学期</title>
-      <link href="/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/"/>
-      <url>/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>短学期依旧是C语言强化+红色寻访实践+企业走访调研，<del>不过这C也太氵了</del>。今年红色实践不是都去井冈山，有三条路可以选择，虽然我还是去了井冈山，练就了坐车玩手机完全不晕的能力，活动还是挺有意思的。企业走访因为台风只去了一家，改为线上调研了。</p></blockquote><p>下面是氵的报告。</p><h3 id="红色寻访实践"><a href="#红色寻访实践" class="headerlink" title="红色寻访实践"></a>红色寻访实践</h3><div class="row">    <embed src="/myblog/pdfs/红色寻访实践.pdf" width="100%" height="550" type="application/pdf"></div><h3 id="企业走访调研"><a href="#企业走访调研" class="headerlink" title="企业走访调研"></a>企业走访调研</h3><div class="row">    <embed src="/myblog/pdfs/企业走访调研.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
       
       
       <categories>
