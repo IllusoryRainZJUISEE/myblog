@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="latex基本语法, animation &amp;&amp; learning">
+    <meta name="keywords" content="Latex基本语法, animation &amp;&amp; learning">
     <meta name="description" content="My Animation Diary &amp;&amp; Learning Life">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>latex基本语法 | IllusoryRain&#39;s Blog</title>
+    <title>Latex基本语法 | IllusoryRain&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/myblog/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/myblog/libs/awesome/css/all.css">
@@ -29,9 +29,9 @@
 
     <script src="/myblog/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 8.1.1">
+<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/myblog/atom.xml" title="IllusoryRain's Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/myblog/atom.xml" title="IllusoryRain's Blog" type="application/atom+xml">
 </head>
 
 
@@ -234,7 +234,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">latex基本语法</h1>
+                    <h1 class="description center-align post-title">Latex基本语法</h1>
                 </div>
             </div>
         </div>
@@ -406,7 +406,34 @@
                 <blockquote>
 <p>为了下学期的大物实验，不得不开始学latex了。</p>
 </blockquote>
-<p>\documentclass[UTF8]{ctexart}<br>UTF8是编码格式，ctexart是文档类型，ctexart是支持中英文混排。<br>\usepackage{graphicx}<br>这是引入一个宏包的语法，这是插入图片的宏包。在正文中需要引入图片时使用\includegraphics[width=0.5\textwidth]{图片的名称，可以省略扩展名}命令。<br>如果要设置图片标题等,需要嵌套结构。<br>\begin{figure}<br>\centering 居中显示<br>\includegraphics[width=0.5\textwidth]{图片的名称，可以省略扩展名}<br>\caption{图片标题}<br>\end{figure}<br>位于begin前的都是前言preamble，里面可以设置文档的标题、作者、日期、页眉页脚、字体大小、行间距等。<br>比如<br>\title{设置文章的标题}<br>\author{设置作者}<br>\date{\today}<br>这是自动生成今天的日期，需要配合\maketitle使用，\maketitle会在正文中生成标题、作者、日期。<br>\begin{document}<br>\maketitle<br>以begin{document}开头，\end{document}结尾，中间的内容就是正文内容。<br>\textbf{加粗文字}<br>\textit{设置斜体}<br>\underline{设置下滑线}<br>注意如果我们要生成一个新的段落，那么需要两下换行符，一个换行符只会生成空格而不会形成新的段落。<br>接下来是如何开启新的章节，使用\section等命令。<br>\section{这是第一个章节}<br>我们可以写第一个章节。<br>\subsection{开启一个子章节}<br>\subsubsection{开启一个子子章节}<br>\section{这是第二个章节}<br>我们可以写第二个章节。<br>注意编辑书籍时可以使用chapter和part等更大的部分命令。<br>大小为part&gt;chapter&gt;section&gt;subsection&gt;subsubsection……<br>接下来介绍latex的环境，位于\begin和\end之间的内容就是环境，它们的文字格式相同。<br>创建一个无序列表。<br>\begin{itemize}<br>\item 第一项<br>\item 第二项<br>\item 第三项<br>\end{itemize}<br>创建一个有序列表。<br>\begin{enumerate}<br>\item 第一项<br>\item 第二项<br>\item 第三项<br>\end{enumerate}<br>接下来是latex的最大优势，数学公式的排版。<br>latex允许直接添加行内公式，需要这样写，$E=mc^2$<br>如果公式需要单独成行。<br>\begin{equation}<br>E=mc^2<br>\end{equation}<br>也可以简写成这样。<br>\[<br>E=mc^2<br>\]<br>建议复杂的公式使用在线公式编译器<a target="_blank" rel="noopener" href="https://latex.codecogs.com/eqneditor/editor.php">https://latex.codecogs.com/eqneditor/editor.php</a><br>接下来是表格的用法。<br>\begin{tabular}{|c|c|c|}三个c表示三列，c表示居中，l表示左对齐，r表示右对齐。|是竖直方向的边框。<br>\hline表示横向的边框。输入两次就变成双横线。<br>单元格1&amp;单元格2&amp;单元格3\\<br>单元格4&amp;单元格5&amp;单元格6\\<br>单元格7&amp;单元格8&amp;单元格9\\分隔是这样写的。<br>\end{tabular}<br>与图片类似，如果需要添加标题等。<br>\begin{table}<br>\centering表示居中<br>\begin{tabular}{|c|c|c|}<br>\hline<br>单元格1&amp;单元格2&amp;单元格3\\<br>\hline<br>单元格4&amp;单元格5&amp;单元格6\\<br>\hline<br>单元格7&amp;单元格8&amp;单元格9\\<br>\hline<br>\end{tabular}<br>\caption{添加标题}<br>\end{table}<br>\end{abstract}<br>\end{document}</p>
+<p>\documentclass[UTF8]{ctexart}<br>UTF8是编码格式，ctexart是文档类型，ctexart是支持中英文混排。</p>
+<p>\usepackage{graphicx}<br>这是引入一个宏包的语法，这是插入图片的宏包。在正文中需要引入图片时使用\includegraphics[width=0.5\textwidth]{图片的名称，可以省略扩展名}命令。</p>
+<p>如果要设置图片标题等,需要嵌套结构。<br>\begin{figure}<br>\centering 居中显示<br>\includegraphics[width=0.5\textwidth]{图片的名称，可以省略扩展名}<br>\caption{图片标题}<br>\end{figure}</p>
+<p>位于\begin{document}前的都是前言preamble，里面可以设置文档的标题、作者、日期、页眉页脚、字体大小、行间距等。<br>\title{设置文章的标题}<br>\author{设置作者}<br>\date{\today}<br>这是自动生成今天的日期，需要配合\maketitle使用，\maketitle会在正文中生成标题、作者、日期。</p>
+<p>\begin{document}<br>\maketitle<br>以begin{document}开头，\end{document}结尾，中间的内容就是正文内容。<br>\textbf{加粗文字}<br>\textit{设置斜体}<br>\underline{设置下滑线}<br>注意如果我们要生成一个新的段落，那么需要两下换行符，一个换行符只会生成空格而不会形成新的段落。<br>接下来是如何开启新的章节，使用\section等命令。</p>
+<p>\section{这是第一个章节}<br>我们可以写第一个章节。</p>
+<p>\subsection{开启一个子章节}</p>
+<p>\subsubsection{开启一个子子章节}</p>
+<p>\section{这是第二个章节}<br>我们可以写第二个章节。</p>
+<p>注意编辑书籍时可以使用\chapter和\part等更大的部分命令。大小为part&gt;chapter&gt;section&gt;subsection&gt;subsubsection……</p>
+<p>接下来介绍latex的环境，位于\begin和\end之间的内容就是环境，它们的文字格式相同。</p>
+<p>接下来是列表的用法，latex提供了两种列表环境，itemize和enumerate，前者是无序列表，后者是有序列表。</p>
+<p>创建一个无序列表。<br>\begin{itemize}<br>\item 第一项<br>\item 第二项<br>\item 第三项<br>\end{itemize}</p>
+<p>创建一个有序列表。<br>\begin{enumerate}<br>\item 第一项<br>\item 第二项<br>\item 第三项<br>\end{enumerate}</p>
+<p>接下来是latex的最大优势，数学公式的排版。<br>latex允许直接添加行内公式，需要这样写，$E=mc^2$</p>
+<p>如果公式需要单独成行。<br>\begin{equation}<br>E=mc^2<br>\end{equation}</p>
+<p>也可以简写成这样。<br>\[<br>E=mc^2<br>\]<br>建议复杂的公式使用在线公式编译器<a target="_blank" rel="noopener" href="https://latex.codecogs.com/eqneditor/editor.php">https://latex.codecogs.com/eqneditor/editor.php</a></p>
+<p>接下来是表格的用法。<br>\begin{tabular}{|c|c|c|}<br>三个c表示三列，c表示居中，l表示左对齐，r表示右对齐。|是竖直方向的边框。<br>\hline % 表示横向的边框。输入两次就变成双横线。<br>单元格1&amp;单元格2&amp;单元格3\\<br>\hline<br>单元格4&amp;单元格5&amp;单元格6\\<br>\hline<br>单元格7&amp;单元格8&amp;单元格9\\ 分隔是这样写的。<br>\hline<br>\end{tabular}</p>
+<p>与图片类似，如果需要添加标题等。</p>
+<p>\begin{table}<br>\centering 表示居中<br>\begin{tabular}{|c|c|c|}<br>\hline<br>单元格1&amp;单元格2&amp;单元格3\\<br>\hline<br>单元格4&amp;单元格5&amp;单元格6\\<br>\hline<br>单元格7&amp;单元格8&amp;单元格9\\<br>\hline<br>\end{tabular}<br>\caption{添加标题}<br>\end{table}</p>
+<p>\end{document}</p>
+<h3 id="以下为效果呈现"><a href="#以下为效果呈现" class="headerlink" title="以下为效果呈现"></a>以下为效果呈现</h3>
+
+	<div class="row">
+    <embed src="/myblog/pdfs/Latex基本语法.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
 
                 
             </div>
@@ -530,9 +557,9 @@
                 <a href="/myblog/2026/08/24/latex-ji-ben-yu-fa/">
                     <div class="card-image">
                         
-                        <img src="/myblog/images/%E6%B7%AC%E7%BE%BD%E8%B5%AB%E9%BB%98ep.png" class="responsive-img" alt="latex基本语法">
+                        <img src="/myblog/images/%E6%B7%AC%E7%BE%BD%E8%B5%AB%E9%BB%98ep.png" class="responsive-img" alt="Latex基本语法">
                         
-                        <span class="card-title">latex基本语法</span>
+                        <span class="card-title">Latex基本语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
