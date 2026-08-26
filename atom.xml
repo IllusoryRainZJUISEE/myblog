@@ -6,7 +6,7 @@
   <link href="https://illusoryrainzjuisee.github.io/myblog/atom.xml" rel="self"/>
   
   <link href="https://illusoryrainzjuisee.github.io/myblog/"/>
-  <updated>2026-08-26T01:34:33.448Z</updated>
+  <updated>2026-08-26T04:21:34.042Z</updated>
   <id>https://illusoryrainzjuisee.github.io/myblog/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Latex基本语法</title>
-    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/24/latex-ji-ben-yu-fa/"/>
-    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/24/latex-ji-ben-yu-fa/</id>
-    <published>2026-08-23T16:00:00.000Z</published>
-    <updated>2026-08-26T01:34:33.448Z</updated>
+    <title>大物实验报告</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/da-wu-shi-yan-bao-gao/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/da-wu-shi-yan-bao-gao/</id>
+    <published>2026-08-24T16:00:00.000Z</published>
+    <updated>2026-08-26T04:21:34.042Z</updated>
     
     
       
@@ -29,7 +29,37 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;为了下学期的大物实验，不得不开始学latex了。&lt;/p&gt;
+&lt;p&gt;先开个坑，慢慢填。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Latex封面模版：&quot;&gt;&lt;a href=&quot;#Latex封面模版：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Material" scheme="https://illusoryrainzjuisee.github.io/myblog/categories/Material/"/>
+    
+    
+    <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
+    
+    <category term="课程资料" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Latex基本语法</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/24/latex-ji-ben-yu-fa/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/24/latex-ji-ben-yu-fa/</id>
+    <published>2026-08-23T16:00:00.000Z</published>
+    <updated>2026-08-26T04:16:59.779Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;为了下学期的大物实验，不得不开始学Latex了。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&#92;documentclass[UTF8]{ctexart}&lt;br&gt;UTF8是编码格式，ctexart是文档类型，ctexart是支持中英文混排。&lt;/p&gt;
 &lt;</summary>
@@ -52,7 +82,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/xin-dian-dao-bao-gao/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/xin-dian-dao-bao-gao/</id>
     <published>2026-08-16T16:00:00.000Z</published>
-    <updated>2026-08-18T11:48:09.006Z</updated>
+    <updated>2026-08-26T04:16:04.779Z</updated>
     
     
       
@@ -63,34 +93,6 @@
 &lt;p&gt;虽然是专业课，但是课是巨水的，没人听的，作业是不讲自学的，大作业的器件是糟糕的，期末考试是超纲的，时间是巨费的，给分是烂的。&lt;del&gt;没有前辈开源的话，瓦塔西&lt;/del&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;作业一&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Material" scheme="https://illusoryrainzjuisee.github.io/myblog/categories/Material/"/>
-    
-    
-    <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
-    
-    <category term="水课作业" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E6%B0%B4%E8%AF%BE%E4%BD%9C%E4%B8%9A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大一信电短学期</title>
-    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/"/>
-    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/</id>
-    <published>2026-08-16T16:00:00.000Z</published>
-    <updated>2026-08-18T10:10:51.545Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;短学期依旧是C语言强化+红色寻访实践+企业走访调研，&lt;del&gt;不过这C也太氵了&lt;/del&gt;。今年红色实践不是都去井冈山，有三条路可以选择，虽然我还是去了井冈山，练就了坐车玩手机完全不晕的能力，活动还是挺有意思的。企业走访因为台风只去了一家，改为线上</summary>
         
       
     
@@ -122,6 +124,34 @@
 &lt;/blockquote&gt;
 &lt;p&gt;补充一下期末考核形式吧：与你的partner对打三十个来回，两次机会，有一定难度。&lt;/p&gt;
 &lt;h2 id=&quot;以下为题库&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Material" scheme="https://illusoryrainzjuisee.github.io/myblog/categories/Material/"/>
+    
+    
+    <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
+    
+    <category term="课程资料" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大一信电短学期</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/</id>
+    <published>2026-08-16T16:00:00.000Z</published>
+    <updated>2026-08-18T10:10:51.545Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;短学期依旧是C语言强化+红色寻访实践+企业走访调研，&lt;del&gt;不过这C也太氵了&lt;/del&gt;。今年红色实践不是都去井冈山，有三条路可以选择，虽然我还是去了井冈山，练就了坐车玩手机完全不晕的能力，活动还是挺有意思的。企业走访因为台风只去了一家，改为线上</summary>
         
       
     
@@ -201,7 +231,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/10/shui-ke-tui-jian-zhong-guo-gu-dai-yi-zhu-yu-wen-ming-shi-qian-tang/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/10/shui-ke-tui-jian-zhong-guo-gu-dai-yi-zhu-yu-wen-ming-shi-qian-tang/</id>
     <published>2026-08-09T16:00:00.000Z</published>
-    <updated>2026-08-18T10:10:36.716Z</updated>
+    <updated>2026-08-26T04:16:13.126Z</updated>
     
     
       
@@ -220,7 +250,7 @@
     
     <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
     
-    <category term="水课作业" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E6%B0%B4%E8%AF%BE%E4%BD%9C%E4%B8%9A/"/>
+    <category term="课程资料" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/"/>
     
   </entry>
   
