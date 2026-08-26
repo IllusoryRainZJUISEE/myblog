@@ -1,5 +1,5 @@
 ---
-title: md基本语法
+title: Markdown基本语法
 date: 2026-02-26
 img: /images/鸿雪ep.png
 categories: Others

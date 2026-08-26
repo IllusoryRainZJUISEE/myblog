@@ -1,7 +1,7 @@
 ---
 title: my first blog
 date: 2026-01-29 
-img: /images/特蕾西娅皮肤.jpg
+img: /images/魔王追悼.jpg
 categories: Others
 tags:
   - 全部
