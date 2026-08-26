@@ -1,0 +1,1563 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="C语言基础, animation &amp;&amp; learning">
+    <meta name="description" content="My Animation Diary &amp;&amp; Learning Life">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>C语言基础 | IllusoryRain&#39;s Blog</title>
+    <link rel="icon" type="image/png" href="/myblog/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/myblog/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/myblog/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/myblog/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/myblog/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/myblog/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/myblog/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/myblog/css/my.css">
+
+    <script src="/myblog/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/myblog/atom.xml" title="IllusoryRain's Blog" type="application/atom+xml">
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/myblog/" class="waves-effect waves-light">
+                    
+                    <img src="/myblog/medias/my-avatar.jpg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">IllusoryRain&#39;s Blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/myblog/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/myblog/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/myblog/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/myblog/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/myblog/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/myblog/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/myblog/medias/my-avatar.jpg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">IllusoryRain&#39;s Blog</div>
+        <div class="logo-desc">
+            
+            My Animation Diary &amp;&amp; Learning Life
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/myblog/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/myblog/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/myblog/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/myblog/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/myblog/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/myblog/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/myblog/images/%E6%B6%A4%E7%81%AB%E6%9D%B0%E8%A5%BF%E5%8D%A1ep.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">C语言基础</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/myblog/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/myblog/tags/%E5%85%A8%E9%83%A8/">
+                                <span class="chip bg-color">全部</span>
+                            </a>
+                        
+                            <a href="/myblog/tags/C%E8%AF%AD%E8%A8%80/">
+                                <span class="chip bg-color">C语言</span>
+                            </a>
+                        
+                    </div>
+                
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/myblog/categories/Material/" class="post-category">
+                                Material
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2026-08-25
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/myblog/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <blockquote>
+<p>上的bhh的C尖，bhh教的还是非常细致认真的，上课时边敲边教的，还不点名doge，以下是bhh上课的一些整理。打算分成六次发。</p>
+</blockquote>
+<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token number">1.</span> <span class="token keyword">if</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token keyword">else</span>的配对规则
+<span class="token keyword">else</span>总是与同一代码块内的、离它最近的、尚未与其它<span class="token keyword">else</span>配对<span class="token keyword">if</span>匹配
+
+<span class="token number">2.</span> <span class="token keyword">if</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token keyword">else</span>本质上是一句话
+
+<span class="token number">3.</span> 多分支结构的写法   <span class="token keyword">if</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token keyword">else</span>缩进的写法称为<span class="token keyword">if</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token keyword">else</span> ladder
+<span class="token keyword">if</span><span class="token punctuation">(</span>条件<span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">;</span>
+<span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>条件<span class="token number">2</span><span class="token punctuation">)</span>
+  <span class="token punctuation">;</span>
+<span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>条件<span class="token number">3</span><span class="token punctuation">)</span>
+  <span class="token punctuation">;</span>
+<span class="token keyword">else</span>
+  <span class="token punctuation">;</span>
+
+
+<span class="token keyword">if</span><span class="token punctuation">(</span>条件<span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>条件<span class="token number">2</span><span class="token punctuation">)</span>
+      <span class="token punctuation">;</span>
+   <span class="token keyword">else</span>
+      <span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">else</span>
+<span class="token punctuation">{</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>条件<span class="token number">3</span><span class="token punctuation">)</span>
+      <span class="token punctuation">;</span>
+   <span class="token keyword">else</span>
+      <span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token number">4.</span> <span class="token keyword">switch</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token keyword">case</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token keyword">int</span> a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">,</span> y<span class="token punctuation">,</span> flag<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+   <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d %d %d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>a<span class="token punctuation">,</span> <span class="token operator">&amp;</span>b<span class="token punctuation">,</span> <span class="token operator">&amp;</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">switch</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span>
+   <span class="token punctuation">{</span>
+   <span class="token keyword">case</span> <span class="token number">10</span><span class="token operator">:</span> <span class="token comment">// ①case后面的表达式不能包含变量，只能是常数</span>
+      y <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span> <span class="token comment">// 这里的break表示当前case的结束</span>
+   <span class="token keyword">case</span> <span class="token number">20</span><span class="token operator">:</span>  <span class="token comment">// ②只能判断相等，不能判断&lt; &gt; !=等范围</span>
+      y <span class="token operator">=</span> a <span class="token operator">-</span> b<span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span> <span class="token comment">// ③每个case后面必须有一个break</span>
+   <span class="token keyword">case</span> <span class="token number">30</span><span class="token operator">:</span>
+      y <span class="token operator">=</span> a <span class="token operator">*</span> b<span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+   <span class="token keyword">default</span><span class="token operator">:</span>  <span class="token comment">// 其它case</span>
+      flag <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 最后case的break可以省略           </span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>flag <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"y=%d\n"</span><span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">else</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"bad choice"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token number">5.</span> <span class="token keyword">if</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token keyword">else</span>多分支可以转化成多个<span class="token keyword">if</span>语句
+<span class="token punctuation">(</span><span class="token number">5.1</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>                    <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+   <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"+"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>               <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"+"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">else</span>                       <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token operator">&lt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token operator">&lt;</span><span class="token number">0</span><span class="token punctuation">)</span>                    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"-"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"-"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>         <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+   <span class="token keyword">else</span>                       <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"0"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"0"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      
+      
+<span class="token punctuation">(</span><span class="token number">5.2</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>x<span class="token operator">&gt;=</span><span class="token number">90</span><span class="token punctuation">)</span>                        <span class="token keyword">if</span><span class="token punctuation">(</span>x<span class="token operator">&gt;=</span><span class="token number">90</span><span class="token punctuation">)</span>
+   <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"优"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"优"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">else</span> <span class="token comment">// x&lt;90</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>x<span class="token operator">&gt;=</span><span class="token number">80</span><span class="token punctuation">)</span>                     <span class="token keyword">if</span><span class="token punctuation">(</span>x<span class="token operator">&gt;=</span><span class="token number">80</span> <span class="token operator">&amp;&amp;</span> x<span class="token operator">&lt;</span><span class="token number">90</span><span class="token punctuation">)</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"良"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                 <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"良"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">else</span> <span class="token comment">// x&lt;80</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>x<span class="token operator">&gt;=</span><span class="token number">60</span><span class="token punctuation">)</span>                  <span class="token keyword">if</span><span class="token punctuation">(</span>x<span class="token operator">&gt;=</span><span class="token number">60</span> <span class="token operator">&amp;&amp;</span> x<span class="token operator">&lt;</span><span class="token number">80</span><span class="token punctuation">)</span>
+         <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"及格"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"及格"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">else</span> <span class="token comment">// x&lt;60               if(x&lt;60)</span>
+         <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"不及格"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>          <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"不及格"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token number">1.</span> <span class="token operator">?</span><span class="token operator">:</span> 运算符
+<span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span> b<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span> c<span class="token punctuation">;</span>
+c <span class="token operator">=</span> a<span class="token operator">&gt;</span>b <span class="token operator">?</span> a<span class="token operator">:</span>b<span class="token punctuation">;</span>
+
+<span class="token number">2.</span> 二进制运算符<span class="token operator">:</span> <span class="token operator">&amp;</span>  <span class="token operator">|</span>  <span class="token operator">^</span>     <span class="token operator">~</span>   <span class="token operator">&lt;&lt;</span>     <span class="token operator">&gt;&gt;</span>
+                与 或 异或  非  左移  右移
+
+<span class="token keyword">char</span> a<span class="token operator">=</span><span class="token number">0xB6</span><span class="token punctuation">,</span> b<span class="token operator">=</span><span class="token number">0x5A</span><span class="token punctuation">,</span> c<span class="token punctuation">;</span> <span class="token comment">/* char是8位宽度的整数类型, int在dev-c++中是32位宽度的整数类型 */</span>
+                        <span class="token comment">// 0x用作十六进制常数的前缀</span>
+c <span class="token operator">=</span> a <span class="token operator">&amp;</span> b<span class="token punctuation">;</span> <span class="token comment">// c=0x12</span>
+<span class="token comment">//a=1011 0110</span>
+<span class="token comment">//b=0101 1010 &amp;)</span>
+<span class="token comment">//--------------</span>
+<span class="token comment">//  0001 0010 = 0x12</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"c=%x"</span><span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// %x表示小写十六进制格式 %X是大写十六进制格式</span>
+
+<span class="token number">0000</span>  <span class="token number">0</span>        <span class="token number">1000</span>  <span class="token number">8</span>
+<span class="token number">0001</span>  <span class="token number">1</span>        <span class="token number">1001</span>  <span class="token number">9</span>
+<span class="token number">0010</span>  <span class="token number">2</span>        <span class="token number">1010</span>  A
+<span class="token number">0011</span>  <span class="token number">3</span>        <span class="token number">1011</span>  B
+<span class="token number">0100</span>  <span class="token number">4</span>        <span class="token number">1100</span>  C
+<span class="token number">0101</span>  <span class="token number">5</span>        <span class="token number">1101</span>  D
+<span class="token number">0110</span>  <span class="token number">6</span>        <span class="token number">1110</span>  E
+<span class="token number">0111</span>  <span class="token number">7</span>        <span class="token number">1111</span>  F
+
+<span class="token keyword">char</span> a<span class="token operator">=</span><span class="token number">0xB6</span><span class="token punctuation">,</span> b<span class="token operator">=</span><span class="token number">0x5A</span><span class="token punctuation">,</span> c<span class="token punctuation">;</span> <span class="token comment">/* char是8位宽度的整数类型 */</span>
+<span class="token comment">// 0x用作十六进制常数的前缀</span>
+c <span class="token operator">=</span> a <span class="token operator">|</span> b<span class="token punctuation">;</span> <span class="token comment">// c=0xFE</span>
+<span class="token comment">//a=1011 0110</span>
+<span class="token comment">//b=0101 1010 |)</span>
+<span class="token comment">//--------------</span>
+<span class="token comment">//  1111 1110</span>
+
+
+<span class="token keyword">char</span> a<span class="token operator">=</span><span class="token number">0xB6</span><span class="token punctuation">,</span> b<span class="token operator">=</span><span class="token number">0x5A</span><span class="token punctuation">,</span> c<span class="token punctuation">;</span> <span class="token comment">/* char是8位宽度的整数类型 */</span>
+<span class="token comment">// 0x用作十六进制常数的前缀</span>
+c <span class="token operator">=</span> a <span class="token operator">^</span> b<span class="token punctuation">;</span> <span class="token comment">// c=0xEC</span>
+<span class="token comment">//a=1011 0110</span>
+<span class="token comment">//b=0101 1010 ^)  异或(exclusive or)</span>
+<span class="token comment">//--------------</span>
+<span class="token comment">//  1110 1100</span>
+
+<span class="token keyword">char</span> a<span class="token operator">=</span><span class="token number">0xB6</span><span class="token punctuation">;</span>
+a <span class="token operator">=</span> <span class="token operator">~</span>a<span class="token punctuation">;</span>  <span class="token comment">// ~是单目运算符, a=0x49</span>
+<span class="token comment">// a=1011 0110</span>
+<span class="token comment">//~a=0100 1001</span>
+
+<span class="token keyword">char</span> a<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">;</span>
+a <span class="token operator">=</span> a <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 左移1位相当于乘以2</span>
+<span class="token comment">//左移前a=0000 0100</span>
+<span class="token comment">//左移后a=0000 1000  </span>
+
+<span class="token keyword">char</span> a<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">;</span>
+a <span class="token operator">=</span> a <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 右移1位相当于除以2</span>
+<span class="token comment">//右移前a=0000 0100</span>
+<span class="token comment">//右移后a=0000 0010 </span>
+
+<span class="token operator">&amp;</span>运算可以把某个数的指定位清<span class="token number">0</span>
+<span class="token operator">|</span>运算可以把某个数的指定位置<span class="token number">1</span>
+设a是一个<span class="token keyword">char</span>类型的<span class="token number">8</span>位整数，现要把它的最高位及最低位清<span class="token number">0</span>，
+其余各位保持不变<span class="token operator">:</span>
+<span class="token keyword">char</span> a<span class="token operator">=</span><span class="token number">0xB6</span><span class="token punctuation">;</span>
+a <span class="token operator">=</span> a <span class="token operator">&amp;</span> <span class="token number">0x7E</span><span class="token punctuation">;</span> <span class="token comment">// 0x7E = 0111 1110, a=0x36</span>
+<span class="token comment">//a=1011 0110</span>
+<span class="token comment">//  0111 1110 &amp;)</span>
+<span class="token comment">//--------------</span>
+<span class="token comment">//  0011 0110</span>
+
+设a是一个<span class="token keyword">char</span>类型的<span class="token number">8</span>位整数，现要把它的最高位及最低位置<span class="token number">1</span>，
+其余各位保持不变<span class="token operator">:</span>
+<span class="token keyword">char</span> a<span class="token operator">=</span><span class="token number">0xB6</span><span class="token punctuation">;</span>
+a <span class="token operator">=</span> a <span class="token operator">|</span> <span class="token number">0x81</span><span class="token punctuation">;</span> <span class="token comment">// 0x81 = 1000 0001, a=0xB7</span>
+<span class="token comment">//a=1011 0110</span>
+<span class="token comment">//  1000 0001 |)</span>
+<span class="token comment">//--------------</span>
+<span class="token comment">//  1011 0111</span>
+
+设a是一个<span class="token keyword">char</span>类型的<span class="token number">8</span>位整数，现要把它的最高位及最低位反转，
+其余各位保持不变<span class="token operator">:</span>
+<span class="token keyword">char</span> a<span class="token operator">=</span><span class="token number">0xB6</span><span class="token punctuation">;</span>
+a <span class="token operator">=</span> a <span class="token operator">|</span> <span class="token number">0x81</span><span class="token punctuation">;</span> <span class="token comment">// 0x81 = 1000 0001, a=0x37</span>
+<span class="token comment">//a=1011 0110</span>
+<span class="token comment">//  1000 0001 ^)</span>
+<span class="token comment">//--------------</span>
+<span class="token comment">//  0011 0111</span>
+
+
+<span class="token number">3.</span> <span class="token operator">++</span> <span class="token operator">--</span>
+a<span class="token operator">=</span>a<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span> 可以简化为a<span class="token operator">++</span><span class="token punctuation">;</span>或<span class="token operator">++</span>a<span class="token punctuation">;</span>
+a<span class="token operator">=</span>a<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> 可以简化为a<span class="token operator">--</span><span class="token punctuation">;</span>或<span class="token operator">--</span>a<span class="token punctuation">;</span>
+当<span class="token operator">++</span>或<span class="token operator">--</span>作用的对象又参与了别的运算时，<span class="token operator">++</span>、<span class="token operator">--</span>位于左右是有区别的
+<span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span> b<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span> c<span class="token punctuation">;</span>
+c <span class="token operator">=</span> a<span class="token operator">++</span> <span class="token operator">+</span> b<span class="token punctuation">;</span> <span class="token comment">// a++的整体的值等于a的原值</span>
+             <span class="token comment">// c = 3 + 5 = 8; 再计算a=a+1=4</span>
+c <span class="token operator">=</span> <span class="token operator">++</span>a <span class="token operator">+</span> b<span class="token punctuation">;</span> <span class="token comment">// ++a的整体的值等于a+1的值</span>
+             <span class="token comment">// c = 4+5 = 9; 再计算a=a+1=4</span>
+
+<span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span> b<span class="token punctuation">;</span>
+b <span class="token operator">=</span> <span class="token operator">-</span>a<span class="token operator">--</span><span class="token punctuation">;</span>    <span class="token comment">// b=-3, a=3-1=2</span>
+
+<span class="token number">4.</span> 整数与小数的混合运算
+<span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword">float</span> b<span class="token operator">=</span><span class="token number">4.95</span><span class="token punctuation">;</span>
+<span class="token keyword">float</span> c<span class="token punctuation">;</span>
+c <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+  <span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span>a <span class="token operator">+</span> b <span class="token comment">// 按整数服从小数规则统一类型</span>
+   <span class="token number">3.0</span> <span class="token operator">+</span> <span class="token number">4.95</span> <span class="token operator">=</span> <span class="token number">7.95</span>
+c <span class="token operator">=</span> a<span class="token punctuation">;</span> <span class="token comment">// c = 3.0</span>
+a <span class="token operator">=</span> b<span class="token punctuation">;</span> <span class="token comment">// a=4  小数后面部分全部丢弃即截断</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="整数的两种类型"><a href="#整数的两种类型" class="headerlink" title="整数的两种类型"></a>整数的两种类型</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token number">1.</span> 整数的两种类型
+<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> 符号数<span class="token punctuation">(</span><span class="token keyword">signed</span> number<span class="token punctuation">)</span><span class="token operator">:</span> 包括正整数、负整数、零
+计算机中用补码<span class="token punctuation">(</span>two`s complement<span class="token punctuation">)</span>表示一个符号数
+<span class="token number">8</span>位正整数的二进制补码的最高位恒为<span class="token number">0</span>，其余各位表示该数的值，例如<span class="token operator">:</span> <span class="token operator">+</span><span class="token number">127</span> <span class="token operator">=</span> <span class="token number">0111</span> <span class="token number">1111</span>
+如何用<span class="token number">8</span>位二进制补码表示<span class="token operator">-</span><span class="token number">1</span>？
+<span class="token operator">+</span><span class="token number">1</span> <span class="token operator">=</span> <span class="token number">0000</span> <span class="token number">0001</span>           <span class="token operator">+</span><span class="token number">2</span> <span class="token operator">=</span> <span class="token number">0000</span> <span class="token number">0010</span>
+<span class="token operator">-</span><span class="token number">1</span> <span class="token operator">=</span> <span class="token number">1111</span> <span class="token number">1111</span> <span class="token operator">+</span><span class="token punctuation">)</span>        <span class="token operator">-</span><span class="token number">2</span> <span class="token operator">=</span> <span class="token number">1111</span> <span class="token number">1110</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>
+     <span class="token number">0000</span> <span class="token number">0000</span>
+
+<span class="token operator">+</span><span class="token number">127</span> <span class="token operator">=</span> <span class="token number">0111</span> <span class="token number">1111</span>        <span class="token operator">-</span><span class="token number">128</span> <span class="token operator">=</span> <span class="token number">1000</span> <span class="token number">0000</span>
+<span class="token operator">-</span><span class="token number">127</span> <span class="token operator">=</span> <span class="token number">1000</span> <span class="token number">0001</span>        <span class="token operator">+</span><span class="token number">127</span> <span class="token operator">=</span> <span class="token number">0111</span> <span class="token number">1111</span>
+                        <span class="token operator">+</span><span class="token number">1</span>   <span class="token operator">=</span> <span class="token number">0000</span> <span class="token number">0001</span> <span class="token operator">+</span><span class="token punctuation">)</span>
+                        <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>
+                                       <span class="token number">0</span>
+
+<span class="token number">8</span>位正整数的取值范围是<span class="token punctuation">[</span><span class="token number">0000</span> <span class="token number">0000</span><span class="token punctuation">,</span> <span class="token number">0111</span> <span class="token number">1111</span><span class="token punctuation">]</span>即<span class="token punctuation">[</span><span class="token number">0x00</span><span class="token punctuation">,</span><span class="token number">0x7F</span><span class="token punctuation">]</span>或<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">127</span><span class="token punctuation">]</span>
+<span class="token number">8</span>位负整数的取值范围是<span class="token punctuation">[</span><span class="token number">1000</span> <span class="token number">0000</span><span class="token punctuation">,</span> <span class="token number">1111</span> <span class="token number">1111</span><span class="token punctuation">]</span>即<span class="token punctuation">[</span><span class="token number">0x80</span><span class="token punctuation">,</span><span class="token number">0xFF</span><span class="token punctuation">]</span>或<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">128</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+
+① <span class="token number">8</span>位符号数即<span class="token keyword">char</span>类型的取值范围是<span class="token punctuation">[</span><span class="token number">1000</span> <span class="token number">0000</span><span class="token punctuation">,</span> <span class="token number">0111</span> <span class="token number">1111</span><span class="token punctuation">]</span>
+即<span class="token punctuation">[</span><span class="token number">0x80</span><span class="token punctuation">,</span> <span class="token number">0x7F</span><span class="token punctuation">]</span>或<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">128</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">127</span><span class="token punctuation">]</span>
+<span class="token keyword">char</span>的输入<span class="token operator">/</span>输出格式<span class="token operator">:</span> <span class="token operator">%</span>c、<span class="token operator">%</span>hhd、<span class="token operator">%</span>hhx、<span class="token operator">%</span>hho
+用<span class="token function">getchar</span><span class="token punctuation">(</span><span class="token punctuation">)</span>这个函数可以对<span class="token keyword">char</span>或<span class="token keyword">unsigned</span> <span class="token keyword">char</span>类型的变量做输入
+用<span class="token function">putchar</span><span class="token punctuation">(</span><span class="token punctuation">)</span>则可以用符号的形式输出某个<span class="token keyword">char</span>或<span class="token keyword">unsigned</span> <span class="token keyword">char</span>
+
+② <span class="token number">16</span>位符号数<span class="token keyword">short</span> <span class="token keyword">int</span>的取值范围<span class="token punctuation">[</span><span class="token number">1</span>后面<span class="token number">15</span>个<span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span>后面<span class="token number">15</span>个<span class="token number">1</span><span class="token punctuation">]</span>即
+<span class="token punctuation">[</span><span class="token number">0x8000</span><span class="token punctuation">,</span> <span class="token number">0x7FFF</span><span class="token punctuation">]</span>或<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">32768</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">32767</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 输入<span class="token operator">/</span>输出格式<span class="token operator">:</span> 
+<span class="token operator">%</span>hd、<span class="token operator">%</span>hx、<span class="token operator">%</span>hX、<span class="token operator">%</span>ho
+
+③ <span class="token number">32</span>位符号数<span class="token keyword">long</span> <span class="token keyword">int</span>的取值范围<span class="token punctuation">[</span><span class="token number">1</span>后面<span class="token number">31</span>个<span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span>后面<span class="token number">31</span>个<span class="token number">1</span><span class="token punctuation">]</span>即
+<span class="token punctuation">[</span><span class="token number">0x80000000</span><span class="token punctuation">,</span> <span class="token number">0x7FFFFFFF</span><span class="token punctuation">]</span>或<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">2147483648</span><span class="token punctuation">,</span> <span class="token operator">+</span><span class="token number">2147483647</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 
+输入<span class="token operator">/</span>输出格式<span class="token operator">:</span> <span class="token operator">%</span>ld、<span class="token operator">%</span>lx、<span class="token operator">%</span>lX、<span class="token operator">%</span>lo
+
+④ <span class="token keyword">int</span>是对<span class="token keyword">short</span> <span class="token keyword">int</span>、<span class="token keyword">long</span> <span class="token keyword">int</span>的抽象<span class="token punctuation">,</span> 它在Dev<span class="token operator">-</span>C<span class="token operator">++</span>中等价于
+<span class="token keyword">long</span> <span class="token keyword">int</span>，在TC中等价于<span class="token keyword">short</span> <span class="token keyword">int</span>，输入<span class="token operator">/</span>输出格式<span class="token operator">:</span> 
+<span class="token operator">%</span>d、<span class="token operator">%</span>x、<span class="token operator">%</span>X、<span class="token operator">%</span>o
+
+
+<span class="token operator">-</span><span class="token number">1</span> 的<span class="token number">8</span>位二进制补码  <span class="token operator">=</span><span class="token number">1111</span> <span class="token number">1111</span>
+<span class="token operator">-</span><span class="token number">1</span> 的<span class="token number">16</span>位二进制补码 <span class="token operator">=</span><span class="token number">16</span>个<span class="token number">1</span>
+<span class="token operator">-</span><span class="token number">1</span> 的<span class="token number">32</span>位二进制补码 <span class="token operator">=</span><span class="token number">32</span>个<span class="token number">1</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token keyword">char</span> a <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span>
+   <span class="token keyword">short</span> <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">0xFFFF</span><span class="token punctuation">;</span>
+   <span class="token keyword">long</span> <span class="token keyword">int</span> c<span class="token operator">=</span><span class="token number">0xFFFFFFFF</span><span class="token punctuation">;</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>a <span class="token operator">==</span> b <span class="token operator">&amp;&amp;</span> b <span class="token operator">==</span> c<span class="token punctuation">)</span> <span class="token comment">// 条件为真</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Yes"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token keyword">char</span> a<span class="token operator">=</span><span class="token number">0xFE</span><span class="token punctuation">;</span> <span class="token comment">// 1111 1110</span>
+   <span class="token keyword">unsigned</span> <span class="token keyword">char</span> b<span class="token operator">=</span><span class="token number">0xFE</span><span class="token punctuation">;</span> <span class="token comment">// 1111 1110</span>
+   a<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">// 1111 1111</span>
+   b<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">// 1111 1111</span>
+   <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"a=%hhd, b=%hhu"</span><span class="token punctuation">,</span> a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 输出a=-1, b=255</span>
+<span class="token punctuation">}</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token comment">// 输入一行以回车结束的字符串, 统计英文字母的个数</span>
+<span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token keyword">unsigned</span> <span class="token keyword">char</span> a<span class="token punctuation">;</span>
+   <span class="token keyword">int</span> n<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+   <span class="token keyword">do</span>
+   <span class="token punctuation">{</span>
+      a <span class="token operator">=</span> <span class="token function">getchar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 等价于scanf("%c", &amp;a);</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token operator">&gt;=</span><span class="token char">'A'</span> <span class="token operator">&amp;&amp;</span> a<span class="token operator">&lt;=</span><span class="token char">'Z'</span> <span class="token operator">||</span> a<span class="token operator">&gt;=</span><span class="token char">'a'</span> <span class="token operator">&amp;&amp;</span> a<span class="token operator">&lt;=</span><span class="token char">'z'</span><span class="token punctuation">)</span>
+         n<span class="token operator">++</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span> <span class="token keyword">while</span><span class="token punctuation">(</span>a <span class="token operator">!=</span> <span class="token char">'\n'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"n=%d"</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">;</span>      
+<span class="token punctuation">}</span>
+
+<span class="token number">0111</span> <span class="token number">1111</span> <span class="token operator">=</span> <span class="token operator">+</span><span class="token number">127</span>                 <span class="token number">1000</span> <span class="token number">0000</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">128</span>
+<span class="token number">0000</span> <span class="token number">0001</span> <span class="token operator">=</span> <span class="token operator">+</span><span class="token number">1</span>   <span class="token operator">+</span><span class="token punctuation">)</span>              <span class="token number">0000</span> <span class="token number">0000</span> <span class="token operator">=</span> <span class="token number">1</span>    <span class="token operator">-</span><span class="token punctuation">)</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>             <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>
+<span class="token number">1000</span> <span class="token number">0000</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">128</span> 溢出<span class="token punctuation">(</span>overflow<span class="token punctuation">)</span>  <span class="token number">0111</span> <span class="token number">1111</span> <span class="token operator">=</span> <span class="token operator">+</span><span class="token number">127</span> 溢出
+
+<span class="token operator">-</span><span class="token number">2</span> <span class="token operator">=</span> <span class="token number">1111</span> <span class="token number">1110</span>
+<span class="token operator">-</span><span class="token number">1</span> <span class="token operator">=</span> <span class="token number">1111</span> <span class="token number">1111</span> <span class="token operator">+</span><span class="token punctuation">)</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>
+     <span class="token number">1111</span> <span class="token number">1101</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">3</span>
+     <span class="token number">0000</span> <span class="token number">0011</span> <span class="token operator">=</span> <span class="token operator">+</span><span class="token number">3</span>
+
+
+
+例如<span class="token operator">:</span> <span class="token keyword">int</span>、<span class="token keyword">char</span>
+<span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">123</span><span class="token punctuation">,</span> b<span class="token operator">=</span><span class="token operator">-</span><span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> x<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> c<span class="token operator">=</span><span class="token number">12345</span><span class="token punctuation">,</span> d<span class="token operator">=</span><span class="token operator">-</span><span class="token number">12345</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> m<span class="token operator">=</span><span class="token number">12345</span><span class="token punctuation">,</span> n<span class="token operator">=</span><span class="token operator">-</span><span class="token number">12345</span><span class="token punctuation">;</span> <span class="token comment">// 语法没错，但m、n实际接收的值</span>
+                        <span class="token comment">// 并非12345及-12345</span>
+                        <span class="token comment">// 因为12345或-12345超过了8位</span>
+                        <span class="token comment">// 它们赋值给m、n时会发生截断</span>
+                        <span class="token comment">// 最终只是把12345、-12345的低8位</span>
+                        <span class="token comment">// 赋值给了m、n</span>
+<span class="token number">12345</span> <span class="token operator">=</span> <span class="token number">0x3039</span> <span class="token operator">=</span> <span class="token number">0011</span> <span class="token number">0000</span> <span class="token number">0011</span> <span class="token number">1001</span>
+                  高<span class="token number">8</span>位     低<span class="token number">8</span>位
+                  
+<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> 非符号数<span class="token punctuation">(</span><span class="token keyword">unsigned</span> number<span class="token punctuation">)</span><span class="token operator">:</span> 仅包含零及正整数
+① <span class="token keyword">unsigned</span> <span class="token keyword">char</span> 是<span class="token number">8</span>位的非符号整数类型
+取值范围是<span class="token punctuation">[</span><span class="token number">0000</span> <span class="token number">0000</span><span class="token punctuation">,</span> <span class="token number">1111</span> <span class="token number">1111</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 即<span class="token punctuation">[</span><span class="token number">0x00</span><span class="token punctuation">,</span> <span class="token number">0xFF</span><span class="token punctuation">]</span>或
+<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 输入<span class="token operator">/</span>输出格式<span class="token operator">:</span> <span class="token operator">%</span>c、<span class="token operator">%</span>hhu、<span class="token operator">%</span>hhx、<span class="token operator">%</span>hhX、<span class="token operator">%</span>hho
+其中u表示十进制非符号整数格式<span class="token punctuation">,</span> 输出结果一定是非零值
+其中<span class="token operator">%</span>c格式表示是以字符<span class="token punctuation">(</span>character<span class="token punctuation">)</span>的形式来做输入或输出
+② <span class="token keyword">unsigned</span> <span class="token keyword">short</span> <span class="token keyword">int</span> 是<span class="token number">16</span>位的非符号整数类型
+取值范围是<span class="token punctuation">[</span><span class="token number">16</span>个<span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">16</span>个<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 即<span class="token punctuation">[</span><span class="token number">0x0000</span><span class="token punctuation">,</span> <span class="token number">0xFFFF</span><span class="token punctuation">]</span>或
+<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">65535</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 输入<span class="token operator">/</span>输出格式<span class="token operator">:</span> <span class="token operator">%</span>hu、<span class="token operator">%</span>hx、<span class="token operator">%</span>hX、<span class="token operator">%</span>ho<span class="token punctuation">,</span> 其中h代表half
+③ <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">int</span> 是<span class="token number">32</span>位的非符号整数类型
+取值范围是<span class="token punctuation">[</span><span class="token number">32</span>个<span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">32</span>个<span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 即<span class="token punctuation">[</span><span class="token number">0x00000000</span><span class="token punctuation">,</span> <span class="token number">0xFFFFFFFF</span><span class="token punctuation">]</span>或
+<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">4294967295</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">,</span> 输入<span class="token operator">/</span>输出格式<span class="token operator">:</span> <span class="token operator">%</span>lu、<span class="token operator">%</span>lx、<span class="token operator">%</span>lX、<span class="token operator">%</span>lo
+其中o表示八进制<span class="token punctuation">(</span>octal<span class="token punctuation">)</span>
+④ <span class="token keyword">unsigned</span> <span class="token keyword">int</span> 是对<span class="token keyword">unsigned</span> <span class="token keyword">short</span> <span class="token keyword">int</span>及<span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">int</span>的抽象<span class="token punctuation">,</span>
+它在某些编译器中如dev<span class="token operator">-</span>C<span class="token operator">++</span>中等价于<span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">int</span>，而在另外
+一些编译器中如TC中等价于<span class="token keyword">unsigned</span> <span class="token keyword">short</span> <span class="token keyword">int</span>，输入<span class="token operator">/</span>输出格式为<span class="token operator">:</span>
+<span class="token operator">%</span>u、<span class="token operator">%</span>x、<span class="token operator">%</span>o<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="常数混合运算"><a href="#常数混合运算" class="headerlink" title="常数混合运算"></a>常数混合运算</h3><pre class="line-numbers language-d" data-language="d"><code class="language-d"><span class="token number">1.</span> 各种类型的常数表示方式
+<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> unsigned <span class="token keyword">char</span>、<span class="token keyword">char</span>类型的常数<span class="token punctuation">:</span>
+① <span class="token char">'A'</span>  <span class="token char">'B'</span>  <span class="token char">'C'</span>  <span class="token char">'0'</span>  <span class="token char">'1'</span>  <span class="token char">'2'</span>  <span class="token char">'@'</span>  <span class="token char">'#'</span>  <span class="token char">' '</span>
+② <span class="token char">'\n'</span>  <span class="token char">'\t'</span>  <span class="token char">'\a'</span>  <span class="token char">'\b'</span>  <span class="token char">'\\'</span>  <span class="token char">'\''</span>  <span class="token char">'\"'</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%c"</span><span class="token punctuation">,</span> <span class="token char">'\a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 或 <span class="token function">putchar</span><span class="token punctuation">(</span><span class="token char">'\a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 并不会在屏幕上
+  输出任何内容，但会让喇叭发声<span class="token punctuation">(</span>a<span class="token punctuation">:</span>alert<span class="token punctuation">)</span>
+  <span class="token char">'\b'</span>表示退格<span class="token punctuation">(</span>back space<span class="token punctuation">)</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"ABC\bxyz"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 会输出ABxyz
+  <span class="token char">'\\'</span> 表示一个反斜杠自己，不能写成'\'
+  <span class="token char">'\''</span> 表示一个单引号自己<span class="token punctuation">,</span> 不能写成<span class="token char">'''</span>
+  双引号既可以写成<span class="token char">'"'</span>也可以写成<span class="token char">'\"'</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%hhu %hhu"</span><span class="token punctuation">,</span> <span class="token char">'\n'</span><span class="token punctuation">,</span> <span class="token char">'\t'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 输出10 9</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"\\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 输出\n  
+③ <span class="token char">'\x41'</span>  <span class="token char">'\xA'</span>  <span class="token char">'\xFF'</span>  十六进制格式
+<span class="token char">'\x41'</span>表示ASCII码等于十六进制<span class="token number">0x41</span>的那个字符即<span class="token char">'A'</span>
+<span class="token char">'\xA'</span> 等价于 <span class="token char">'\n'</span>
+<span class="token char">'\xFF'</span>表示ASCII码等于十六进制<span class="token number">0xFF</span>的那个字符即ASCII码表中的最后那个字符
+
+④ <span class="token char">'\101'</span> <span class="token char">'\12'</span> <span class="token char">'\377'</span> <span class="token char">'\0'</span> 八进制格式
+<span class="token char">'\101'</span>表示ASCII等于八进制<span class="token number">0101</span>的那个字符即<span class="token char">'A'</span>
+<span class="token char">'\12'</span>表示ASCII等于八进制<span class="token number">012</span>的那个字符即<span class="token char">'\n'</span>
+<span class="token char">'\377'</span>表示ASCII等于八进制<span class="token number">0377</span>的那个字符即<span class="token char">'\xFF'</span>
+<span class="token char">'\0'</span>表示ASCII等于八进制<span class="token number">0</span>的那个字符即ASCII码表中的首个字符
+
+  
+  <span class="token keyword">char</span> x <span class="token operator">=</span> <span class="token char">'A'</span><span class="token punctuation">;</span>  <span class="token comment">// 优先选择</span>
+  <span class="token keyword">char</span> x <span class="token operator">=</span> <span class="token char">'\x41'</span><span class="token punctuation">;</span>
+  <span class="token keyword">char</span> x <span class="token operator">=</span> <span class="token char">'\101'</span><span class="token punctuation">;</span>
+  <span class="token keyword">char</span> x <span class="token operator">=</span> <span class="token number">65</span><span class="token punctuation">;</span>
+  
+  <span class="token keyword">char</span> x <span class="token operator">=</span> <span class="token char">'\n'</span><span class="token punctuation">;</span> <span class="token comment">// 优先选择</span>
+  <span class="token keyword">char</span> x <span class="token operator">=</span> <span class="token char">'\x0A'</span><span class="token punctuation">;</span>
+  <span class="token keyword">char</span> x <span class="token operator">=</span> <span class="token char">'\12'</span><span class="token punctuation">;</span>
+  <span class="token keyword">char</span> x <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+  
+  <span class="token keyword">char</span> x <span class="token operator">=</span> <span class="token char">'\0'</span><span class="token punctuation">;</span> <span class="token comment">// 优先选择</span>
+  <span class="token keyword">char</span> x <span class="token operator">=</span> <span class="token char">'\x0'</span><span class="token punctuation">;</span>
+  <span class="token keyword">char</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token comment">// 0是一个int类型的常数，在dev-c++中</span>
+  <span class="token comment">// 它的宽度是32位，赋值时会发生截断</span>
+  <span class="token comment">// a会被赋值为0的低8位, 而0的高24位</span>
+  <span class="token comment">// 则会被丢弃</span>
+  <span class="token number">0000</span> <span class="token number">0000</span>  <span class="token number">0000</span> <span class="token number">0000</span>  <span class="token number">0000</span> <span class="token number">0000</span>  <span class="token number">0000</span> <span class="token number">0000</span>
+  <span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span><span class="token operator">~</span>  <span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+     高<span class="token number">24</span>位会被丢弃                低<span class="token number">8</span>位赋值给x
+  
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"\3\3\3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 或 <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"\x3\x3\x3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 或 <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%c%c%c"</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  不能改写成<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"333"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">int</span>、unsigned <span class="token keyword">int</span>类型的常数
+① <span class="token keyword">int</span> a<span class="token operator">=</span><span class="token operator">-</span><span class="token number">123</span><span class="token punctuation">;</span> unsigned <span class="token keyword">int</span> b<span class="token operator">=</span><span class="token number">456</span><span class="token punctuation">;</span>
+② <span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">0x41</span><span class="token punctuation">;</span> unsigned <span class="token keyword">int</span> b<span class="token operator">=</span><span class="token number">0xFF</span><span class="token punctuation">;</span>  <span class="token comment">// 十六进制(hexadecimal)</span>
+③ <span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">0101</span><span class="token punctuation">;</span> unsigned <span class="token keyword">int</span> b<span class="token operator">=</span><span class="token number">0377</span><span class="token punctuation">;</span>  <span class="token comment">// 八进制(octal)</span>
+
+<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token keyword">long</span> <span class="token keyword">int</span>、unsigned <span class="token keyword">int</span>、unsigned <span class="token keyword">long</span> <span class="token keyword">int</span>类型的常数
+① <span class="token keyword">long</span> <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">1L</span><span class="token punctuation">;</span> <span class="token comment">// (long int)1</span>
+  <span class="token keyword">long</span> <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 在TC中, 1作为int类型的常数仅有16位</span>
+                  <span class="token comment">// 故在赋值时需要做扩充(左边补16个0)                   </span>
+② unsigned <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">0U</span><span class="token punctuation">;</span> <span class="token comment">// (unsigned int)0</span>
+③ unsigned <span class="token keyword">long</span> <span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token number">123UL</span><span class="token punctuation">;</span> <span class="token comment">// (unsigned long int)123</span>
+
+<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token keyword">float</span>、<span class="token keyword">double</span>类型的常数
+① <span class="token keyword">float</span> a<span class="token operator">=</span><span class="token number">3.14</span><span class="token punctuation">;</span> <span class="token keyword">double</span> b<span class="token operator">=</span><span class="token number">3.14</span><span class="token punctuation">;</span>
+② <span class="token keyword">float</span> a<span class="token operator">=</span><span class="token number">3.14E2</span><span class="token punctuation">;</span> <span class="token keyword">double</span> b<span class="token operator">=</span><span class="token number">3.14E-2</span><span class="token punctuation">;</span> <span class="token comment">// 科学计数法</span>
+③ <span class="token keyword">float</span> a<span class="token operator">=</span><span class="token number">3.14F</span><span class="token punctuation">;</span>  <span class="token comment">// 相当于(float)3.14</span>
+小数常数的默认类型为<span class="token keyword">double</span>，并非<span class="token keyword">float</span>
+如<span class="token number">3.14</span>是<span class="token keyword">double</span>类型，要强调<span class="token number">3.14</span>是一个<span class="token keyword">float</span>时需要写成<span class="token number">3.14F</span>
+
+<span class="token number">2.</span> 混合类型运算规则
+<span class="token keyword">int</span> x<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword">float</span> y<span class="token operator">=</span><span class="token number">3.14</span><span class="token punctuation">;</span>
+<span class="token keyword">double</span> z<span class="token punctuation">;</span>
+z <span class="token operator">=</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span> <span class="token comment">// 整数类型要服从小数类型, z=6.14</span>
+    <span class="token operator">|</span>
+  <span class="token keyword">float</span> 
+   <span class="token number">3.0F</span>  <span class="token number">3.14F</span>
+      <span class="token number">6.14F</span>
+
+
+<span class="token keyword">short</span> <span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token keyword">long</span> <span class="token keyword">int</span> b<span class="token operator">=</span><span class="token number">2000</span><span class="token punctuation">,</span> c<span class="token punctuation">;</span>
+c <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span> <span class="token comment">// 宽度小的类型要服从宽度大的类型, c = 2100L</span>
+    <span class="token operator">|</span>
+  <span class="token number">100L</span>  <span class="token number">2000L</span>
+
+<span class="token keyword">char</span>类型的值无论跟谁运算，都需要把它自己转化成<span class="token keyword">int</span>类型再计算
+unsigned <span class="token keyword">char</span>类型的值无论跟谁运算，都需要把它自己转化成
+unsigned <span class="token keyword">int</span>类型再计算
+
+<span class="token keyword">char</span> a<span class="token operator">=</span><span class="token number">127</span><span class="token punctuation">,</span> b<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> c<span class="token punctuation">;</span>
+c <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>  
+    <span class="token operator">|</span>   <span class="token operator">|</span>   
+   <span class="token keyword">int</span>  <span class="token keyword">int</span> 
+   <span class="token number">127</span>  <span class="token number">1</span>   
+
+<span class="token number">0000</span> <span class="token number">0000</span> <span class="token number">0000</span> <span class="token number">0000</span> <span class="token number">0000</span> <span class="token number">0000</span>  <span class="token number">0111</span> <span class="token number">1111</span> 转化成<span class="token keyword">int</span>后的<span class="token number">127</span>
+<span class="token number">0000</span> <span class="token number">0000</span> <span class="token number">0000</span> <span class="token number">0000</span> <span class="token number">0000</span> <span class="token number">0000</span>  <span class="token number">0000</span> <span class="token number">0001</span> 转化成<span class="token keyword">int</span>后的<span class="token number">1</span> <span class="token operator">+</span><span class="token punctuation">)</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>
+<span class="token number">0000</span> <span class="token number">0000</span> <span class="token number">0000</span> <span class="token number">0000</span> <span class="token number">0000</span> <span class="token number">0000</span>  <span class="token number">1000</span> <span class="token number">0000</span> <span class="token operator">=</span> <span class="token operator">+</span><span class="token number">128</span>
+
+
+            
+            
+<span class="token number">3.</span> 截断与扩充
+<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> 整数的截断<span class="token punctuation">:</span> 当把宽度大的值赋值给宽度小的变量时会发生截断，截断的
+规则是保留低位，丢弃高位。
+<span class="token keyword">short</span> <span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">0x1234</span><span class="token punctuation">;</span> <span class="token comment">// 0x1234=0001 0010  0011 0100</span>
+<span class="token keyword">char</span> b<span class="token punctuation">;</span>
+b <span class="token operator">=</span> a<span class="token punctuation">;</span> <span class="token comment">// b=0x34</span>
+<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> 小数的截断<span class="token punctuation">:</span> 当把小数赋值给整型变量时会发生截断<span class="token punctuation">,</span> 截断时
+仅保留整数部分，丢弃小数部分<span class="token punctuation">;</span>
+<span class="token keyword">float</span> a<span class="token operator">=</span><span class="token number">3.95</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> b<span class="token punctuation">,</span> c<span class="token punctuation">;</span>
+b <span class="token operator">=</span> a<span class="token punctuation">;</span>  <span class="token comment">// b = 3</span>
+c <span class="token operator">=</span> a <span class="token operator">+</span> <span class="token number">0.5</span><span class="token punctuation">;</span> <span class="token comment">// c=4 四舍五入</span>
+
+<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> 整数的扩充
+把宽度小的整数值赋值给宽度大的整型变量时需要先扩充再赋值，
+扩充的规则是正整数左边补<span class="token number">0</span>，负整数左边补<span class="token number">1</span>。
+<span class="token keyword">char</span> a <span class="token operator">=</span> <span class="token number">127</span><span class="token punctuation">;</span> <span class="token comment">// a=127=0111 1111</span>
+<span class="token keyword">short</span> <span class="token keyword">int</span> b<span class="token punctuation">;</span>
+b <span class="token operator">=</span> a<span class="token punctuation">;</span>  <span class="token comment">// b=127=0000 0000 01111 1111</span>
+        <span class="token comment">//                 ~~~~~~~~~~</span>
+<span class="token keyword">char</span> a <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">;</span>  <span class="token comment">// a=-2=1111 1110</span>
+<span class="token keyword">short</span> <span class="token keyword">int</span> b<span class="token punctuation">;</span>  <span class="token comment">// b=1111 1111 1111 1110 = -2</span>
+b <span class="token operator">=</span> a<span class="token punctuation">;</span>        <span class="token comment">//             ~~~~~~~~~</span>
+
+unsigned <span class="token keyword">char</span> a<span class="token operator">=</span><span class="token number">254</span><span class="token punctuation">;</span> <span class="token comment">// a=254=1111 1110</span>
+<span class="token keyword">short</span> <span class="token keyword">int</span> b<span class="token punctuation">;</span>  <span class="token comment">// b=0000 0000 1111 1110 = 254</span>
+b <span class="token operator">=</span> a<span class="token punctuation">;</span>        <span class="token comment">//             ~~~~~~~~~</span>
+
+<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> 当对负整数右移时须在左边补<span class="token number">1</span>，对正整数右移时则在左边补<span class="token number">0</span>
+<span class="token keyword">char</span> a <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">;</span>  <span class="token comment">//原 a=-4=1111 1100</span>
+a <span class="token operator">=</span> a <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">;</span>   <span class="token comment">//新 a=1111 1110=-2</span>
+
+
+<span class="token number">4.</span> 运算符<span class="token punctuation">:</span> sizeof  <span class="token operator">=</span> <span class="token operator">+=</span> <span class="token operator">-</span><span class="token operator">+</span> <span class="token operator">*=</span> <span class="token operator">/=</span> <span class="token operator">%=</span> <span class="token operator">&lt;&lt;=</span>  <span class="token operator">&gt;&gt;=</span>  <span class="token operator">&amp;=</span> <span class="token operator">|=</span> <span class="token operator">^=</span> <span class="token punctuation">,</span>
+sizeof用来求某个类型的变量的宽度是多少字节
+<span class="token keyword">int</span> n<span class="token punctuation">;</span>
+n <span class="token operator">=</span> <span class="token function">sizeof</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// n = 1</span>
+n <span class="token operator">=</span> <span class="token function">sizeof</span><span class="token punctuation">(</span><span class="token keyword">short</span> <span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// n = 2</span>
+n <span class="token operator">=</span> <span class="token function">sizeof</span><span class="token punctuation">(</span><span class="token keyword">long</span> <span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// n = 4</span>
+n <span class="token operator">=</span> <span class="token function">sizeof</span><span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// n = 4</span>
+n <span class="token operator">=</span> <span class="token function">sizeof</span><span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// n = 8</span>
+
+<span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">;</span>
+c <span class="token operator">=</span> b <span class="token operator">=</span> a<span class="token punctuation">;</span> <span class="token comment">// 相当于c = (b = a);</span>
+
+<span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> b<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">;</span>
+b <span class="token operator">+=</span> a<span class="token punctuation">;</span>  <span class="token comment">// 相当于 b = b + a;</span>
+
+<span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">;</span>
+a <span class="token operator">&lt;&lt;=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 相当于 a = a &lt;&lt; 1;</span>
+
+逗号运算符
+<span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> b<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span> c<span class="token punctuation">;</span>
+c <span class="token operator">=</span> <span class="token punctuation">(</span>a<span class="token operator">+=</span><span class="token number">2</span><span class="token punctuation">,</span> b<span class="token operator">-=</span><span class="token number">1</span><span class="token punctuation">,</span> b<span class="token operator">*=</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// c=8</span>
+    a<span class="token operator">=</span><span class="token number">4</span>    b<span class="token operator">=</span><span class="token number">2</span>   b<span class="token operator">=</span><span class="token number">8</span>
+
+?<span class="token punctuation">:</span>
+<span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span> b<span class="token punctuation">;</span>
+b <span class="token operator">=</span> a <span class="token operator">&gt;</span> <span class="token number">0</span> ? <span class="token number">1</span> <span class="token punctuation">:</span> a <span class="token operator">&lt;</span> <span class="token number">0</span> ? <span class="token operator">-</span><span class="token number">1</span> <span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span> 等价于 b <span class="token operator">=</span> a <span class="token operator">&gt;</span> <span class="token number">0</span> ? <span class="token number">1</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>a <span class="token operator">&lt;</span> <span class="token number">0</span> ? <span class="token operator">-</span><span class="token number">1</span> <span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+用#define定义符号常数
+#define PI <span class="token number">3.14159</span>
+<span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+   <span class="token keyword">float</span> r<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> area<span class="token punctuation">;</span>
+   area <span class="token operator">=</span> PI <span class="token operator">*</span> r <span class="token operator">*</span> r<span class="token punctuation">;</span>
+   PI <span class="token operator">=</span> <span class="token number">3.14</span><span class="token punctuation">;</span> <span class="token comment">// 语法错误，因为PI是常数，不可更改</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/myblog/about" rel="external nofollow noreferrer">IllusoryRain</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://illusoryrainzjuisee.github.io/myblog/myblog/2026/08/25/c-yu-yan-ji-chu/">https://illusoryrainzjuisee.github.io/myblog/myblog/2026/08/25/c-yu-yan-ji-chu/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/myblog/about" target="_blank">IllusoryRain</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/myblog/tags/%E5%85%A8%E9%83%A8/">
+                                    <span class="chip bg-color">全部</span>
+                                </a>
+                            
+                                <a href="/myblog/tags/C%E8%AF%AD%E8%A8%80/">
+                                    <span class="chip bg-color">C语言</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/myblog/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,qzone,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/myblog/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/myblog/2026/08/25/c-yu-yan-ji-chu/">
+                    <div class="card-image">
+                        
+                        <img src="/myblog/images/%E6%B6%A4%E7%81%AB%E6%9D%B0%E8%A5%BF%E5%8D%A1ep.png" class="responsive-img" alt="C语言基础">
+                        
+                        <span class="card-title">C语言基础</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-08-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/myblog/categories/Material/" class="post-category">
+                                    Material
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/myblog/tags/%E5%85%A8%E9%83%A8/">
+                        <span class="chip bg-color">全部</span>
+                    </a>
+                    
+                    <a href="/myblog/tags/C%E8%AF%AD%E8%A8%80/">
+                        <span class="chip bg-color">C语言</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/myblog/2026/08/25/shu-zu/">
+                    <div class="card-image">
+                        
+                        <img src="/myblog/images/%E8%8E%B1%E4%BC%8Aep.png" class="responsive-img" alt="数组">
+                        
+                        <span class="card-title">数组</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-08-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/myblog/categories/Material/" class="post-category">
+                                    Material
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/myblog/tags/%E5%85%A8%E9%83%A8/">
+                        <span class="chip bg-color">全部</span>
+                    </a>
+                    
+                    <a href="/myblog/tags/C%E8%AF%AD%E8%A8%80/">
+                        <span class="chip bg-color">C语言</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/myblog/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/myblog/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/myblog/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/myblog/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/myblog/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/myblog/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: linear-gradient(to right, #87CEEB 0%, #4A90E2 100%);
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="8840148049"
+                   fixed='true'
+                   autoplay='false'
+                   theme='linear-gradient(to right, #87CEEB 0%, #4A90E2 100%)'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.5'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/myblog/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year" style="display: none;">2026</span>
+            
+            <span id="year" style="display: none;">2026</span>
+            <a href="/myblog/about" target="_blank">IllusoryRain</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">25.8k</span>&nbsp;字
+            
+            
+            
+            
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2026";
+                    var startMonth = "1";
+                    var startDate = "29";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link ">
+    <a href="https://github.com/IllusoryRainZJUISEE" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1317683816@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: 1317683816@qq.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1317683816" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1317683816" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/myblog/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/myblog/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/myblog/libs/materialize/materialize.min.js"></script>
+    <script src="/myblog/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/myblog/libs/aos/aos.js"></script>
+    <script src="/myblog/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/myblog/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/myblog/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/myblog/libs/others/clicklove.js" async="async"></script>
+    
+    
+
+    
+
+    
+
+	
+    
+    <script type="text/javascript" color="90, 40, 140"
+        pointColor="150, 90, 190" opacity='0.65'
+        zIndex="-1" count="60"
+        src="/myblog/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+    <script type="text/javascript" src="/myblog/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/myblog/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+<script src="/myblog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/myblog/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":false},"log":false});</script></body>
+
+</html>
