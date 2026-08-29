@@ -1,6 +1,6 @@
 ---
 title: Latex基本语法
-date: 2026-08-24
+date: 2026-08-23
 img: /images/淬羽赫默ep.png
 categories: Others
 tags:

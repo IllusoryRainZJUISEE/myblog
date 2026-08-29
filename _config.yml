@@ -46,10 +46,11 @@ relative_link: false
 future: true
 syntax_highlighter: prismjs
 highlight:
-  line_number: false
+  enable: false
+  line_number: true
   auto_detect: false
   tab_replace: ''
-  wrap: false
+  wrap: true
   hljs: false
 prismjs:
   enable: true
