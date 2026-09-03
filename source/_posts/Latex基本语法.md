@@ -99,22 +99,22 @@ E=mc^2
 \hline
 \end{tabular}
 
-% 与图片类似，如果需要添加标题等。
+% 与图片类似，如果需要添加标题等，使用嵌套结构。
 
 \begin{table}
 \centering 表示居中
 	\begin{tabular}{|c|c|c|}
 	\hline
-	单元格1&单元格2&单元格3\\\\
+	单元格1&单元格2&单元格3\\
 	\hline
-	单元格4&单元格5&单元格6\\\\
+	单元格4&单元格5&单元格6\\
 	\hline
-	单元格7&单元格8&单元格9\\\\
+	单元格7&单元格8&单元格9\\
 	\hline
 	\end{tabular}
 \caption{添加标题}
 \end{table}
-% 如果需要控制表格位置或者图片位置，需引入宏包\usepackage{float}，在\begin{table}后加入[H]
+% 如果需要控制表格位置或者图片位置，需引入宏包\usepackage{float}，在\begin{table}后加入[H]。
 
 \end{document}
 ```
