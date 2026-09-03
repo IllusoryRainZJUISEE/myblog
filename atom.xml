@@ -6,7 +6,7 @@
   <link href="https://illusoryrainzjuisee.github.io/myblog/atom.xml" rel="self"/>
   
   <link href="https://illusoryrainzjuisee.github.io/myblog/"/>
-  <updated>2026-08-26T13:06:03.279Z</updated>
+  <updated>2026-08-29T02:56:00.741Z</updated>
   <id>https://illusoryrainzjuisee.github.io/myblog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/c-yu-yan-ji-chu/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/c-yu-yan-ji-chu/</id>
     <published>2026-08-24T16:00:00.000Z</published>
-    <updated>2026-08-26T13:06:03.279Z</updated>
+    <updated>2026-08-29T02:56:00.741Z</updated>
     
     
       
@@ -51,7 +51,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/zhi-zhen/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/zhi-zhen/</id>
     <published>2026-08-24T16:00:00.000Z</published>
-    <updated>2026-08-26T13:08:31.802Z</updated>
+    <updated>2026-08-29T02:56:00.748Z</updated>
     
     
       
@@ -74,38 +74,11 @@
   </entry>
   
   <entry>
-    <title>文件</title>
-    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/wen-jian/"/>
-    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/wen-jian/</id>
-    <published>2026-08-24T16:00:00.000Z</published>
-    <updated>2026-08-26T13:21:14.162Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;文件&quot;&gt;&lt;a href=&quot;#文件&quot; class=&quot;headerlink&quot; title=&quot;文件&quot;&gt;&lt;/a&gt;文件&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="Material" scheme="https://illusoryrainzjuisee.github.io/myblog/categories/Material/"/>
-    
-    
-    <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
-    
-    <category term="C语言" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
     <title>数组</title>
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/shu-zu/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/shu-zu/</id>
     <published>2026-08-24T16:00:00.000Z</published>
-    <updated>2026-08-26T13:07:27.307Z</updated>
+    <updated>2026-08-29T02:56:00.748Z</updated>
     
     
       
@@ -128,11 +101,38 @@
   </entry>
   
   <entry>
+    <title>文件</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/wen-jian/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/wen-jian/</id>
+    <published>2026-08-24T16:00:00.000Z</published>
+    <updated>2026-08-29T02:56:00.749Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;文件&quot;&gt;&lt;a href=&quot;#文件&quot; class=&quot;headerlink&quot; title=&quot;文件&quot;&gt;&lt;/a&gt;文件&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="Material" scheme="https://illusoryrainzjuisee.github.io/myblog/categories/Material/"/>
+    
+    
+    <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
+    
+    <category term="C语言" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
     <title>结构</title>
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/jie-gou/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/jie-gou/</id>
     <published>2026-08-24T16:00:00.000Z</published>
-    <updated>2026-08-26T13:21:07.188Z</updated>
+    <updated>2026-08-29T02:56:00.750Z</updated>
     
     
       
@@ -159,7 +159,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/di-gui/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/di-gui/</id>
     <published>2026-08-24T16:00:00.000Z</published>
-    <updated>2026-08-26T13:20:59.386Z</updated>
+    <updated>2026-08-29T02:56:00.751Z</updated>
     
     
       
@@ -186,7 +186,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/24/da-wu-shi-yan-bao-gao/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/24/da-wu-shi-yan-bao-gao/</id>
     <published>2026-08-23T16:00:00.000Z</published>
-    <updated>2026-08-26T13:16:17.375Z</updated>
+    <updated>2026-08-29T02:56:00.746Z</updated>
     
     
       
@@ -216,7 +216,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/23/latex-ji-ben-yu-fa/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/23/latex-ji-ben-yu-fa/</id>
     <published>2026-08-22T16:00:00.000Z</published>
-    <updated>2026-08-26T13:12:24.521Z</updated>
+    <updated>2026-09-03T08:57:35.102Z</updated>
     
     
       
@@ -226,8 +226,7 @@
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;为了下学期的大物实验，不得不开始学Latex了。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&#92;documentclass[UTF8]{ctexart}&lt;br&gt;UTF8是编码格式，ctexart是文档类型，ctexart是支持中英文混排。&lt;/p&gt;
-&lt;</summary>
+&lt;pre class=&quot;line-numbers language-latex&quot; data-language=&quot;latex&quot;&gt;&lt;code</summary>
         
       
     
@@ -243,11 +242,39 @@
   </entry>
   
   <entry>
+    <title>大一信电短学期</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/</id>
+    <published>2026-08-16T16:00:00.000Z</published>
+    <updated>2026-08-29T02:56:00.745Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;短学期依旧是C语言强化+红色寻访实践+企业走访调研，&lt;del&gt;不过这C也太氵了&lt;/del&gt;。今年红色实践不是都去井冈山，有三条路可以选择，虽然我还是去了井冈山，练就了坐车玩手机完全不晕的能力，活动还是挺有意思的。企业走访因为台风只去了一家，改为线上</summary>
+        
+      
+    
+    
+    
+    <category term="Work" scheme="https://illusoryrainzjuisee.github.io/myblog/categories/Work/"/>
+    
+    
+    <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
+    
+    <category term="专业课" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E4%B8%93%E4%B8%9A%E8%AF%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>信电导报告</title>
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/xin-dian-dao-bao-gao/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/xin-dian-dao-bao-gao/</id>
     <published>2026-08-16T16:00:00.000Z</published>
-    <updated>2026-08-26T12:59:48.659Z</updated>
+    <updated>2026-08-29T02:56:00.743Z</updated>
     
     
       
@@ -273,11 +300,11 @@
   </entry>
   
   <entry>
-    <title>大一信电短学期</title>
-    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/"/>
-    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/</id>
+    <title>大雾甲I课件</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-wu-jia-i-ke-jian/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-wu-jia-i-ke-jian/</id>
     <published>2026-08-16T16:00:00.000Z</published>
-    <updated>2026-08-26T12:57:28.207Z</updated>
+    <updated>2026-08-29T02:56:00.747Z</updated>
     
     
       
@@ -285,18 +312,20 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;短学期依旧是C语言强化+红色寻访实践+企业走访调研，&lt;del&gt;不过这C也太氵了&lt;/del&gt;。今年红色实践不是都去井冈山，有三条路可以选择，虽然我还是去了井冈山，练就了坐车玩手机完全不晕的能力，活动还是挺有意思的。企业走访因为台风只去了一家，改为线上</summary>
+&lt;p&gt;任课老师：lijie，杰哥伟大，我不会忘记发的100元红包的。自认为杰哥的课件质量不错，上传供参考。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;质点运动学&quot;&gt;&lt;a href=&quot;#质点运动学&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="Work" scheme="https://illusoryrainzjuisee.github.io/myblog/categories/Work/"/>
+    <category term="Material" scheme="https://illusoryrainzjuisee.github.io/myblog/categories/Material/"/>
     
     
     <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
     
-    <category term="专业课" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E4%B8%93%E4%B8%9A%E8%AF%BE/"/>
+    <category term="数理基础课" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80%E8%AF%BE/"/>
     
   </entry>
   
@@ -305,7 +334,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/pi-ke-qiu-kao-shi-zi-liao/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/pi-ke-qiu-kao-shi-zi-liao/</id>
     <published>2026-08-16T16:00:00.000Z</published>
-    <updated>2026-08-26T13:14:09.814Z</updated>
+    <updated>2026-08-29T02:56:00.744Z</updated>
     
     
       
@@ -332,41 +361,11 @@
   </entry>
   
   <entry>
-    <title>大雾甲I课件</title>
-    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-wu-jia-i-ke-jian/"/>
-    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-wu-jia-i-ke-jian/</id>
-    <published>2026-08-16T16:00:00.000Z</published>
-    <updated>2026-08-26T13:16:36.673Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;任课老师：lijie，杰哥伟大，我不会忘记发的100元红包的。自认为杰哥的课件质量不错，上传供参考。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;质点运动学&quot;&gt;&lt;a href=&quot;#质点运动学&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Material" scheme="https://illusoryrainzjuisee.github.io/myblog/categories/Material/"/>
-    
-    
-    <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
-    
-    <category term="数理基础课" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80%E8%AF%BE/"/>
-    
-  </entry>
-  
-  <entry>
     <title>工信分流</title>
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/16/gong-xin-fen-liu/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/16/gong-xin-fen-liu/</id>
     <published>2026-08-15T16:00:00.000Z</published>
-    <updated>2026-08-26T12:58:37.274Z</updated>
+    <updated>2026-08-29T02:56:00.747Z</updated>
     
     
       
@@ -396,7 +395,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/10/shui-ke-tui-jian-zhong-guo-gu-dai-yi-zhu-yu-wen-ming-shi-qian-tang/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/10/shui-ke-tui-jian-zhong-guo-gu-dai-yi-zhu-yu-wen-ming-shi-qian-tang/</id>
     <published>2026-08-09T16:00:00.000Z</published>
-    <updated>2026-08-26T13:14:28.800Z</updated>
+    <updated>2026-08-29T02:56:00.749Z</updated>
     
     
       
@@ -424,7 +423,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/09/dian-gong-xun-shi-yan-bao-gao/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/09/dian-gong-xun-shi-yan-bao-gao/</id>
     <published>2026-08-08T16:00:00.000Z</published>
-    <updated>2026-08-26T13:16:00.453Z</updated>
+    <updated>2026-08-29T02:56:00.750Z</updated>
     
     
       
@@ -454,7 +453,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/07/18/da-yi-chun-xia/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/07/18/da-yi-chun-xia/</id>
     <published>2026-07-17T16:00:00.000Z</published>
-    <updated>2026-08-26T12:38:34.636Z</updated>
+    <updated>2026-08-29T02:56:00.745Z</updated>
     
     
       
@@ -481,7 +480,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/02/26/markdown-ji-ben-yu-fa/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/02/26/markdown-ji-ben-yu-fa/</id>
     <published>2026-02-25T16:00:00.000Z</published>
-    <updated>2026-08-26T12:34:18.206Z</updated>
+    <updated>2026-08-29T02:56:00.742Z</updated>
     
     
       
@@ -535,7 +534,7 @@
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/01/29/my-first-blog/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/01/29/my-first-blog/</id>
     <published>2026-01-28T16:00:00.000Z</published>
-    <updated>2026-08-26T13:00:37.303Z</updated>
+    <updated>2026-08-29T02:56:00.743Z</updated>
     
     
       

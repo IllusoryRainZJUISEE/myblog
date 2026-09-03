@@ -29,9 +29,9 @@
 
     <script src="/myblog/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 8.1.1">
+<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/myblog/atom.xml" title="IllusoryRain's Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/myblog/atom.xml" title="IllusoryRain's Blog" type="application/atom+xml">
 </head>
 
 
@@ -281,19 +281,28 @@
                 
                 
                 
+                <a href="/myblog/categories/Others/" title="Others: 3">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F9EBEA;">Others
+                        <span class="tag-length">3</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/myblog/categories/Material/" title="Material: 8">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            style="background-color: #F9EBEA;">Material
+                            style="background-color: #F5EEF8;">Material
                         <span class="tag-length">8</span>
                     </span>
                 </a>
                 
                 
-                <a href="/myblog/categories/Others/" title="Others: 3">
+                <a href="/myblog/categories/Summary/" title="Summary: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">Others
+                            style="background-color: #D5F5E3;">Summary
                         <span class="tag-length">3</span>
                     </span>
                 </a>
@@ -302,17 +311,8 @@
                 <a href="/myblog/categories/Work/" title="Work: 5">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #D5F5E3;">Work
+                            style="background-color: #E8F8F5;">Work
                         <span class="tag-length">5</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/myblog/categories/Summary/" title="Summary: 3">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #E8F8F5;">Summary
-                        <span class="tag-length">3</span>
                     </span>
                 </a>
                 
@@ -440,23 +440,22 @@ struct st // struct st是结构类型名, st是标签名
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/myblog/2026/08/25/shu-zu/">
+                    <a href="/myblog/2026/08/25/wen-jian/">
                         <div class="card-image tag-image">
                             
-                            <img src="/myblog/images/%E8%8E%B1%E4%BC%8Aep.png" class="responsive-img" alt="数组">
+                            <img src="/myblog/images/%E9%9A%90%E5%BE%B7%E6%9D%A5%E5%B8%8Cep.png" class="responsive-img" alt="文件">
                             
-                            <span class="card-title">数组</span>
+                            <span class="card-title">文件</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                数组1. 数组(array)
+                                文件1. 文件
+(1) 例1:读文件内容输出到屏幕上(bug版)
+假设abc.txt的内容为"ABC"，则以下程序会在屏幕上输出"ABC\xFF"
 #include &lt;stdio.h&gt;
-main()
-{
-   int a[5]; // 定义一个整数类型的数组a，该数组包含5个元素
-             // 分别是a[0],a[1],a[2
+#include &lt;stdlib.h
                             
                         </div>
                         <div class="publish-info">
@@ -494,22 +493,23 @@ main()
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/myblog/2026/08/25/wen-jian/">
+                    <a href="/myblog/2026/08/25/shu-zu/">
                         <div class="card-image tag-image">
                             
-                            <img src="/myblog/images/%E9%9A%90%E5%BE%B7%E6%9D%A5%E5%B8%8Cep.png" class="responsive-img" alt="文件">
+                            <img src="/myblog/images/%E8%8E%B1%E4%BC%8Aep.png" class="responsive-img" alt="数组">
                             
-                            <span class="card-title">文件</span>
+                            <span class="card-title">数组</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                文件1. 文件
-(1) 例1:读文件内容输出到屏幕上(bug版)
-假设abc.txt的内容为"ABC"，则以下程序会在屏幕上输出"ABC\xFF"
+                                数组1. 数组(array)
 #include &lt;stdio.h&gt;
-#include &lt;stdlib.h
+main()
+{
+   int a[5]; // 定义一个整数类型的数组a，该数组包含5个元素
+             // 分别是a[0],a[1],a[2
                             
                         </div>
                         <div class="publish-info">
@@ -654,6 +654,60 @@ else总是与同一代码块内的、离它最近的、尚未与其它else配对
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/myblog/2026/08/17/pi-ke-qiu-kao-shi-zi-liao/">
+                        <div class="card-image tag-image">
+                            
+                            <img src="/myblog/images/%E7%BA%AF%E7%83%AC%E8%89%BE%E9%9B%85%E6%B3%95%E6%8B%89ep.png" class="responsive-img" alt="匹克球考试资料">
+                            
+                            <span class="card-title">匹克球考试资料</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+匹克球的理论考题库里都是找的到的。还有lzy捞神伟大无需多言。
+
+补充一下期末考核形式吧：与你的partner对打三十个来回，两次机会，有一定难度。
+以下为题库
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-08-17
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/myblog/categories/Material/" class="post-category">
+                                    Material
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/myblog/tags/%E5%85%A8%E9%83%A8/">
+                            <span class="chip bg-color">全部</span>
+                        </a>
+                        
+                        <a href="/myblog/tags/%E4%BD%93%E8%82%B2%E8%AF%BE/">
+                            <span class="chip bg-color">体育课</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/myblog/2026/08/17/da-wu-jia-i-ke-jian/">
                         <div class="card-image tag-image">
                             
@@ -724,60 +778,6 @@ else总是与同一代码块内的、离它最近的、尚未与其它else配对
                         
                         <a href="/myblog/tags/%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80%E8%AF%BE/">
                             <span class="chip bg-color">数理基础课</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/myblog/2026/08/17/pi-ke-qiu-kao-shi-zi-liao/">
-                        <div class="card-image tag-image">
-                            
-                            <img src="/myblog/images/%E7%BA%AF%E7%83%AC%E8%89%BE%E9%9B%85%E6%B3%95%E6%8B%89ep.png" class="responsive-img" alt="匹克球考试资料">
-                            
-                            <span class="card-title">匹克球考试资料</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-匹克球的理论考题库里都是找的到的。还有lzy捞神伟大无需多言。
-
-补充一下期末考核形式吧：与你的partner对打三十个来回，两次机会，有一定难度。
-以下为题库
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2026-08-17
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/myblog/categories/Material/" class="post-category">
-                                    Material
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/myblog/tags/%E5%85%A8%E9%83%A8/">
-                            <span class="chip bg-color">全部</span>
-                        </a>
-                        
-                        <a href="/myblog/tags/%E4%BD%93%E8%82%B2%E8%AF%BE/">
-                            <span class="chip bg-color">体育课</span>
                         </a>
                         
                     </div>
@@ -861,7 +861,7 @@ else总是与同一代码块内的、离它最近的、尚未与其它else配对
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.8k</span>&nbsp;字
+                class="white-color">25.9k</span>&nbsp;字
             
             
             

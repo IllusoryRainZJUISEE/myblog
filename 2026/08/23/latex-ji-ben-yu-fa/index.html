@@ -29,9 +29,9 @@
 
     <script src="/myblog/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 8.1.1">
+<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/myblog/atom.xml" title="IllusoryRain's Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/myblog/atom.xml" title="IllusoryRain's Blog" type="application/atom+xml">
 </head>
 
 
@@ -406,30 +406,147 @@
                 <blockquote>
 <p>为了下学期的大物实验，不得不开始学Latex了。</p>
 </blockquote>
-<p>\documentclass[UTF8]{ctexart}<br>UTF8是编码格式，ctexart是文档类型，ctexart是支持中英文混排。</p>
-<p>\usepackage{graphicx}<br>这是引入一个宏包的语法，这是插入图片的宏包。<br>在正文中需要引入图片时使用\includegraphics[width=0.5\textwidth]{图片的名称，可以省略扩展名}命令。</p>
-<p>如果要设置图片标题等,需要嵌套结构。<br>\begin{figure}<br>\centering 居中显示<br>\includegraphics[width=0.5\textwidth]{图片的名称，可以省略扩展名}<br>\caption{图片标题}<br>\end{figure}</p>
-<p>位于\begin{document}前的都是前言preamble，里面可以设置文档的标题、作者、日期、页眉页脚、字体大小、行间距等。<br>\title{设置文章的标题}<br>\author{设置作者}<br>\date{\today}<br>这是自动生成今天的日期，可以配合\maketitle使用，使用\maketitle会在正文中生成标题、作者、日期。</p>
-<p>\begin{document}<br>\maketitle<br>以\begin{document}开头，\end{document}结尾，中间的内容就是正文内容。</p>
-<p>常见的文字样式设置。<br>\textbf{加粗文字}<br>\textit{设置斜体}<br>\underline{设置下滑线}</p>
-<p>注意如果我们要生成一个新的段落，那么需要两下换行符，一个换行符只会生成空格而不会形成新的段落。<br>接下来是如何开启新的章节，使用\section等命令。<br>\section{这是第一个章节}<br>我们可以写第一个章节。</p>
-<p>\subsection{开启一个子章节}</p>
-<p>\subsubsection{开启一个子子章节}</p>
-<p>\section{这是第二个章节}<br>我们可以写第二个章节。</p>
-<p>注意编辑书籍时可以使用\chapter和\part等更大的部分命令。大小为part&gt;chapter&gt;section&gt;subsection&gt;subsubsection……</p>
-<p>接下来介绍latex的环境，位于\begin和\end之间的内容就是环境，它们的文字格式相同。</p>
-<p>接下来是列表的用法，latex提供了两种列表环境，itemize和enumerate，前者是无序列表，后者是有序列表。</p>
-<p>创建一个无序列表。<br>\begin{itemize}<br>\item 第一项<br>\item 第二项<br>\item 第三项<br>\end{itemize}</p>
-<p>创建一个有序列表。<br>\begin{enumerate}<br>\item 第一项<br>\item 第二项<br>\item 第三项<br>\end{enumerate}</p>
-<p>接下来是latex的最大优势，数学公式的排版。</p>
-<p>latex允许直接添加行内公式，需要这样写，$E=mc^2$</p>
-<p>如果公式需要单独成行。<br>\begin{equation}<br>E=mc^2<br>\end{equation}</p>
-<p>也可以简写成这样。<br>\[<br>E=mc^2<br>\]<br>建议复杂的公式使用在线公式编译器<a target="_blank" rel="noopener" href="https://latex.codecogs.com/eqneditor/editor.php">https://latex.codecogs.com/eqneditor/editor.php</a></p>
-<p>接下来是表格的用法。</p>
-<p>\begin{tabular}{|c|c|c|}<br>三个c表示三列，c表示居中，l表示左对齐，r表示右对齐。|是竖直方向的边框。<br>\hline % 表示横向的边框。输入两次就变成双横线。<br>单元格1&amp;单元格2&amp;单元格3\\<br>\hline<br>单元格4&amp;单元格5&amp;单元格6\\<br>\hline<br>单元格7&amp;单元格8&amp;单元格9\\ 分隔是这样写的。<br>\hline<br>\end{tabular}</p>
-<p>与图片类似，如果需要添加标题等。</p>
-<p>\begin{table}<br>\centering 表示居中<br>\begin{tabular}{|c|c|c|}<br>\hline<br>单元格1&amp;单元格2&amp;单元格3\\<br>\hline<br>单元格4&amp;单元格5&amp;单元格6\\<br>\hline<br>单元格7&amp;单元格8&amp;单元格9\\<br>\hline<br>\end{tabular}<br>\caption{添加标题}<br>\end{table}</p>
-<p>\end{document}</p>
+<pre class="line-numbers language-latex" data-language="latex"><code class="language-latex"><span class="token function selector">\documentclass</span><span class="token punctuation">[</span>UTF8<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">ctexart</span><span class="token punctuation">}</span> 
+<span class="token comment">% UTF8是编码格式，ctexart是文档类型，ctexart是支持中英文混排。</span>
+
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">graphicx</span><span class="token punctuation">}</span> 
+<span class="token comment">% 这是引入一个宏包的语法，这是插入图片的宏包。在正文中需要引入图片时使用\includegraphics[width=0.5\textwidth]{图片的名称，可以省略扩展名}命令。</span>
+
+<span class="token comment">% 如果要设置图片标题等,需要嵌套结构。</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">figure</span><span class="token punctuation">}</span>
+	<span class="token function selector">\centering</span> 居中显示
+	<span class="token function selector">\includegraphics</span><span class="token punctuation">[</span>width=0.5<span class="token function selector">\textwidth</span><span class="token punctuation">]</span><span class="token punctuation">{</span>图片的名称，可以省略扩展名<span class="token punctuation">}</span>
+	<span class="token function selector">\caption</span><span class="token punctuation">{</span>图片标题<span class="token punctuation">}</span>  
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">figure</span><span class="token punctuation">}</span>
+
+<span class="token comment">% 位于\begin{document}前的都是前言preamble，里面可以设置文档的标题、作者、日期、页眉页脚、字体大小、行间距等。</span>
+<span class="token function selector">\title</span><span class="token punctuation">{</span>设置文章的标题<span class="token punctuation">}</span>
+<span class="token function selector">\author</span><span class="token punctuation">{</span>设置作者<span class="token punctuation">}</span>
+<span class="token function selector">\date</span><span class="token punctuation">{</span><span class="token function selector">\today</span><span class="token punctuation">}</span> 
+<span class="token comment">% 这是自动生成今天的日期，可以配合\maketitle使用，使用\maketitle会在正文中生成标题、作者、日期。</span>
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+<span class="token comment">% 以\begin{document}开头，\end{document}结尾，中间的内容就是正文内容。</span>
+<span class="token function selector">\maketitle</span>
+
+<span class="token comment">% 常见的文字样式设置。</span>
+<span class="token function selector">\textbf</span><span class="token punctuation">{</span>加粗文字<span class="token punctuation">}</span>
+<span class="token function selector">\textit</span><span class="token punctuation">{</span>设置斜体<span class="token punctuation">}</span>
+<span class="token function selector">\underline</span><span class="token punctuation">{</span>设置下滑线<span class="token punctuation">}</span>
+
+<span class="token comment">% 注意如果我们要生成一个新的段落，那么需要两下换行符，一个换行符只会生成空格而不会形成新的段落。</span>
+
+<span class="token comment">% 接下来是如何开启新的章节，使用\section等命令。</span>
+<span class="token function selector">\section</span><span class="token punctuation">{</span><span class="token headline class-name">这是第一个章节</span><span class="token punctuation">}</span>
+我们可以写第一个章节。
+
+	<span class="token function selector">\subsection</span><span class="token punctuation">{</span><span class="token headline class-name">开启一个子章节</span><span class="token punctuation">}</span>
+
+		<span class="token function selector">\subsubsection</span><span class="token punctuation">{</span><span class="token headline class-name">开启一个子子章节</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\section</span><span class="token punctuation">{</span><span class="token headline class-name">这是第二个章节</span><span class="token punctuation">}</span>
+<span class="token comment">% 我们可以写第二个章节。</span>
+
+<span class="token comment">% 注意编辑书籍时可以使用\chapter和\part等更大的部分命令。大小为part&gt;chapter&gt;section&gt;subsection&gt;subsubsection……</span>
+
+<span class="token comment">% 接下来介绍latex的环境，位于\begin和\end之间的内容就是环境，它们的文字格式相同。</span>
+
+<span class="token comment">% 接下来是列表的用法，latex提供了两种列表环境，itemize和enumerate，前者是无序列表，后者是有序列表。</span>
+
+<span class="token comment">%创建一个无序列表。</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">itemize</span><span class="token punctuation">}</span>
+	<span class="token function selector">\item</span> 第一项
+	<span class="token function selector">\item</span> 第二项
+	<span class="token function selector">\item</span> 第三项
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">itemize</span><span class="token punctuation">}</span>
+
+<span class="token comment">% 创建一个有序列表。</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">enumerate</span><span class="token punctuation">}</span>
+	<span class="token function selector">\item</span> 第一项
+	<span class="token function selector">\item</span> 第二项
+	<span class="token function selector">\item</span> 第三项
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">enumerate</span><span class="token punctuation">}</span>
+
+<span class="token comment">% 接下来是latex的最大优势，数学公式的排版。</span>
+
+<span class="token comment">% latex允许直接添加行内公式，需要这样写，$E=mc^2$</span>
+
+<span class="token comment">% 如果公式需要单独成行。</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span><span class="token equation string">
+E=mc^2
+</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span>
+
+<span class="token comment">% 也可以简写成这样，其中\\[  \\]结构就表示中间的是公式。</span>
+\<span class="token equation string">\[
+E=mc^2
+<span class="token equation-command regex">\\</span>]</span>
+<span class="token comment">% 建议复杂的公式使用在线公式编译器https://latex.codecogs.com/eqneditor/editor.php</span>
+
+<span class="token comment">% 接下来是表格的用法。</span>
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span><span class="token punctuation">{</span>|c|c|c|<span class="token punctuation">}</span> 
+三个c表示三列，c表示居中，l表示左对齐，r表示右对齐。|是竖直方向的边框。
+<span class="token function selector">\hline</span> <span class="token comment">% 表示横向的边框。输入两次就变成双横线。</span>
+单元格1<span class="token punctuation">&amp;</span>单元格2<span class="token punctuation">&amp;</span>单元格3<span class="token function selector">\\</span>
+<span class="token function selector">\hline</span>
+单元格4<span class="token punctuation">&amp;</span>单元格5<span class="token punctuation">&amp;</span>单元格6<span class="token function selector">\\</span>
+<span class="token function selector">\hline</span>
+单元格7<span class="token punctuation">&amp;</span>单元格8<span class="token punctuation">&amp;</span>单元格9<span class="token function selector">\\</span> <span class="token comment">% 分隔是这样写的。</span>
+<span class="token function selector">\hline</span>
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span>
+
+<span class="token comment">% 与图片类似，如果需要添加标题等。</span>
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">table</span><span class="token punctuation">}</span>
+<span class="token function selector">\centering</span> 表示居中
+	<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span><span class="token punctuation">{</span>|c|c|c|<span class="token punctuation">}</span>
+	<span class="token function selector">\hline</span>
+	单元格1<span class="token punctuation">&amp;</span>单元格2<span class="token punctuation">&amp;</span>单元格3<span class="token function selector">\\</span><span class="token function selector">\\</span>
+	<span class="token function selector">\hline</span>
+	单元格4<span class="token punctuation">&amp;</span>单元格5<span class="token punctuation">&amp;</span>单元格6<span class="token function selector">\\</span><span class="token function selector">\\</span>
+	<span class="token function selector">\hline</span>
+	单元格7<span class="token punctuation">&amp;</span>单元格8<span class="token punctuation">&amp;</span>单元格9<span class="token function selector">\\</span><span class="token function selector">\\</span>
+	<span class="token function selector">\hline</span>
+	<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span>
+<span class="token function selector">\caption</span><span class="token punctuation">{</span>添加标题<span class="token punctuation">}</span>
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">table</span><span class="token punctuation">}</span>
+<span class="token comment">% 如果需要控制表格位置或者图片位置，需引入宏包\usepackage{float}，在\begin{table}后加入[H]</span>
+
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="float宏包的用法"><a href="#float宏包的用法" class="headerlink" title="float宏包的用法"></a>float宏包的用法</h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+<th>位置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>h</td>
+<td>here</td>
+<td>尽量当前位置</td>
+</tr>
+<tr>
+<td>t</td>
+<td>top</td>
+<td>页面顶部</td>
+</tr>
+<tr>
+<td>b</td>
+<td>bottom</td>
+<td>页面底部</td>
+</tr>
+<tr>
+<td>p</td>
+<td>page</td>
+<td>单独的浮动页</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Here</td>
+<td>强制当前位置</td>
+</tr>
+</tbody></table>
 <h3 id="以下为效果呈现"><a href="#以下为效果呈现" class="headerlink" title="以下为效果呈现"></a>以下为效果呈现</h3>
 
 	<div class="row">
@@ -608,12 +725,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/myblog/2026/08/17/xin-dian-dao-bao-gao/">
+                <a href="/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/">
                     <div class="card-image">
                         
-                        <img src="/myblog/images/%E6%96%AF%E5%8D%A1%E8%92%82%E4%B8%8B%E4%B8%80%E9%A1%BF%E5%8D%88%E8%8C%B6.png" class="responsive-img" alt="信电导报告">
+                        <img src="/myblog/images/%E4%BB%87%E7%99%BDep.png" class="responsive-img" alt="大一信电短学期">
                         
-                        <span class="card-title">信电导报告</span>
+                        <span class="card-title">大一信电短学期</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -849,7 +966,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.8k</span>&nbsp;字
+                class="white-color">25.9k</span>&nbsp;字
             
             
             
