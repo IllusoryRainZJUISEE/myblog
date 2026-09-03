@@ -47,9 +47,9 @@
   </entry>
   
   <entry>
-    <title>指针</title>
-    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/zhi-zhen/"/>
-    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/zhi-zhen/</id>
+    <title>数组</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/shu-zu/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/shu-zu/</id>
     <published>2026-08-24T16:00:00.000Z</published>
     <updated>2026-08-29T02:56:00.748Z</updated>
     
@@ -58,7 +58,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;指针&quot;&gt;&lt;a href=&quot;#指针&quot; class=&quot;headerlink&quot; title=&quot;指针&quot;&gt;&lt;/a&gt;指针&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code</summary>
+    <summary type="html">&lt;h3 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code</summary>
         
       
     
@@ -74,9 +74,9 @@
   </entry>
   
   <entry>
-    <title>数组</title>
-    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/shu-zu/"/>
-    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/shu-zu/</id>
+    <title>指针</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/zhi-zhen/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/zhi-zhen/</id>
     <published>2026-08-24T16:00:00.000Z</published>
     <updated>2026-08-29T02:56:00.748Z</updated>
     
@@ -85,7 +85,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code</summary>
+    <summary type="html">&lt;h3 id=&quot;指针&quot;&gt;&lt;a href=&quot;#指针&quot; class=&quot;headerlink&quot; title=&quot;指针&quot;&gt;&lt;/a&gt;指针&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code</summary>
         
       
     
@@ -128,18 +128,18 @@
   </entry>
   
   <entry>
-    <title>结构</title>
-    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/jie-gou/"/>
-    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/jie-gou/</id>
+    <title>递归</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/di-gui/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/di-gui/</id>
     <published>2026-08-24T16:00:00.000Z</published>
-    <updated>2026-08-29T02:56:00.750Z</updated>
+    <updated>2026-08-29T02:56:00.751Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;结构&quot;&gt;&lt;a href=&quot;#结构&quot; class=&quot;headerlink&quot; title=&quot;结构&quot;&gt;&lt;/a&gt;结构&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code</summary>
+    <summary type="html">&lt;h3 id=&quot;递归&quot;&gt;&lt;a href=&quot;#递归&quot; class=&quot;headerlink&quot; title=&quot;递归&quot;&gt;&lt;/a&gt;递归&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code</summary>
         
       
     
@@ -155,18 +155,18 @@
   </entry>
   
   <entry>
-    <title>递归</title>
-    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/di-gui/"/>
-    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/di-gui/</id>
+    <title>结构</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/25/jie-gou/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/25/jie-gou/</id>
     <published>2026-08-24T16:00:00.000Z</published>
-    <updated>2026-08-29T02:56:00.751Z</updated>
+    <updated>2026-08-29T02:56:00.750Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;递归&quot;&gt;&lt;a href=&quot;#递归&quot; class=&quot;headerlink&quot; title=&quot;递归&quot;&gt;&lt;/a&gt;递归&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code</summary>
+    <summary type="html">&lt;h3 id=&quot;结构&quot;&gt;&lt;a href=&quot;#结构&quot; class=&quot;headerlink&quot; title=&quot;结构&quot;&gt;&lt;/a&gt;结构&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code</summary>
         
       
     
@@ -242,6 +242,36 @@
   </entry>
   
   <entry>
+    <title>信电导报告</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/xin-dian-dao-bao-gao/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/xin-dian-dao-bao-gao/</id>
+    <published>2026-08-16T16:00:00.000Z</published>
+    <updated>2026-08-29T02:56:00.743Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;虽然是专业课，但是课是巨水的，没人听的，作业是不讲自学的，大作业的器件是糟糕的，期末考试是超纲的，时间是巨费的，给分是烂的。&lt;del&gt;没有前辈开源的话，瓦塔西&lt;/del&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;作业一&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Work" scheme="https://illusoryrainzjuisee.github.io/myblog/categories/Work/"/>
+    
+    
+    <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
+    
+    <category term="专业课" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E4%B8%93%E4%B8%9A%E8%AF%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>匹克球考试资料</title>
     <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/pi-ke-qiu-kao-shi-zi-liao/"/>
     <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/pi-ke-qiu-kao-shi-zi-liao/</id>
@@ -269,34 +299,6 @@
     <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
     
     <category term="体育课" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E4%BD%93%E8%82%B2%E8%AF%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大一信电短学期</title>
-    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/"/>
-    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/</id>
-    <published>2026-08-16T16:00:00.000Z</published>
-    <updated>2026-08-29T02:56:00.745Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;短学期依旧是C语言强化+红色寻访实践+企业走访调研，&lt;del&gt;不过这C也太氵了&lt;/del&gt;。今年红色实践不是都去井冈山，有三条路可以选择，虽然我还是去了井冈山，练就了坐车玩手机完全不晕的能力，活动还是挺有意思的。企业走访因为台风只去了一家，改为线上</summary>
-        
-      
-    
-    
-    
-    <category term="Work" scheme="https://illusoryrainzjuisee.github.io/myblog/categories/Work/"/>
-    
-    
-    <category term="全部" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E5%85%A8%E9%83%A8/"/>
-    
-    <category term="专业课" scheme="https://illusoryrainzjuisee.github.io/myblog/tags/%E4%B8%93%E4%B8%9A%E8%AF%BE/"/>
     
   </entry>
   
@@ -331,11 +333,11 @@
   </entry>
   
   <entry>
-    <title>信电导报告</title>
-    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/xin-dian-dao-bao-gao/"/>
-    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/xin-dian-dao-bao-gao/</id>
+    <title>大一信电短学期</title>
+    <link href="https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/"/>
+    <id>https://illusoryrainzjuisee.github.io/myblog/2026/08/17/da-yi-xin-dian-duan-xue-qi/</id>
     <published>2026-08-16T16:00:00.000Z</published>
-    <updated>2026-08-29T02:56:00.743Z</updated>
+    <updated>2026-08-29T02:56:00.745Z</updated>
     
     
       
@@ -343,9 +345,7 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;虽然是专业课，但是课是巨水的，没人听的，作业是不讲自学的，大作业的器件是糟糕的，期末考试是超纲的，时间是巨费的，给分是烂的。&lt;del&gt;没有前辈开源的话，瓦塔西&lt;/del&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;作业一&quot;&gt;&lt;a</summary>
+&lt;p&gt;短学期依旧是C语言强化+红色寻访实践+企业走访调研，&lt;del&gt;不过这C也太氵了&lt;/del&gt;。今年红色实践不是都去井冈山，有三条路可以选择，虽然我还是去了井冈山，练就了坐车玩手机完全不晕的能力，活动还是挺有意思的。企业走访因为台风只去了一家，改为线上</summary>
         
       
     
